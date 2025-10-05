@@ -1,4 +1,4 @@
-//// ===================== File: src/geo_resolver.cpp =====================
+//// ===================== File: src/geo_r.cpp =====================
 #include "geo_resolver.hpp"
 #include "dns_resolver.hpp"
 #include "tcp_socket.hpp"
@@ -77,7 +77,7 @@ namespace geo
 
         // Extract "ASnnnnn" prefix from as_text
         std::smatch am;
-        if (std::regex_search(g.as_text, am, std::regex("(AS\d+)")))
+        if (std::regex_search(g.as_text, am, std::regex("(AS\\d+)")))
             g.asn = am[1];
 
         return g;
