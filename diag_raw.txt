@@ -766,3 +766,108 @@
 2025-10-05 10:13:40.415 | STOP: destination reached at ttl=2
 2025-10-05 10:13:40.415 | DIAG: Only local gateway and destination responded; intermediate ICMP Time Exceeded likely blocked or not translated by NAT/bridge.
 === geo_tracer diag end 2025-10-05 10:13:40.918 ===
+=== geo_tracer diag start 2025-10-05 10:29:12.624 ===
+2025-10-05 10:29:12.624 | SETUP src=192.168.48.130 dst=104.16.132.229:443 mode=raw
+2025-10-05 10:29:12.624 | HOP 1: send 3 probes
+2025-10-05 10:29:12.624 | PROBE_SENT mode=raw ttl=1 idx=0 sport=33437 bytes=40
+2025-10-05 10:29:12.624 | PROBE_SENT mode=raw ttl=1 idx=1 sport=33438 bytes=40
+2025-10-05 10:29:12.624 | PROBE_SENT mode=raw ttl=1 idx=2 sport=33439 bytes=40
+2025-10-05 10:29:12.625 | ICMP_TIME_EXCEEDED from=192.168.48.2 sport=33437 inner_ttl=1 rtt_ms=0.277867
+2025-10-05 10:29:12.625 | ICMP_TIME_EXCEEDED from=192.168.48.2 sport=33438 inner_ttl=1 rtt_ms=0.282158
+2025-10-05 10:29:12.625 | ICMP_TIME_EXCEEDED from=192.168.48.2 sport=33439 inner_ttl=1 rtt_ms=0.276784
+2025-10-05 10:29:12.625 | HOP_SUMMARY ttl=1 replies=3 reached=0
+2025-10-05 10:29:12.625 | HOP 2: send 3 probes
+2025-10-05 10:29:12.625 | PROBE_SENT mode=raw ttl=2 idx=0 sport=33440 bytes=40
+2025-10-05 10:29:12.625 | PROBE_SENT mode=raw ttl=2 idx=1 sport=33441 bytes=40
+2025-10-05 10:29:12.625 | PROBE_SENT mode=raw ttl=2 idx=2 sport=33442 bytes=40
+2025-10-05 10:29:12.632 | DEST_REPLY type=SYN-ACK sport=33440 rtt_ms=7.411697
+2025-10-05 10:29:12.633 | DEST_REPLY type=SYN-ACK sport=33441 rtt_ms=8.234423
+2025-10-05 10:29:12.634 | DEST_REPLY type=SYN-ACK sport=33442 rtt_ms=9.631173
+2025-10-05 10:29:12.634 | HOP_SUMMARY ttl=2 replies=3 reached=1
+2025-10-05 10:29:12.634 | STOP: destination reached at ttl=2
+2025-10-05 10:29:12.634 | DIAG: Only local gateway and destination responded; intermediate ICMP Time Exceeded likely blocked or not translated by NAT/bridge.
+=== geo_tracer diag end 2025-10-05 10:29:13.082 ===
+=== geo_tracer diag start 2025-10-05 10:29:25.373 ===
+2025-10-05 10:29:25.373 | SETUP src=192.168.48.130 dst=172.253.118.100:443 mode=raw
+2025-10-05 10:29:25.373 | HOP 1: send 3 probes
+2025-10-05 10:29:25.373 | PROBE_SENT mode=raw ttl=1 idx=0 sport=33437 bytes=40
+2025-10-05 10:29:25.373 | PROBE_SENT mode=raw ttl=1 idx=1 sport=33438 bytes=40
+2025-10-05 10:29:25.373 | PROBE_SENT mode=raw ttl=1 idx=2 sport=33439 bytes=40
+2025-10-05 10:29:25.373 | ICMP_TIME_EXCEEDED from=192.168.48.2 sport=33437 inner_ttl=1 rtt_ms=0.279548
+2025-10-05 10:29:25.373 | ICMP_TIME_EXCEEDED from=192.168.48.2 sport=33438 inner_ttl=1 rtt_ms=0.283217
+2025-10-05 10:29:25.373 | ICMP_TIME_EXCEEDED from=192.168.48.2 sport=33439 inner_ttl=1 rtt_ms=0.277005
+2025-10-05 10:29:25.373 | HOP_SUMMARY ttl=1 replies=3 reached=0
+2025-10-05 10:29:25.373 | HOP 2: send 3 probes
+2025-10-05 10:29:25.373 | PROBE_SENT mode=raw ttl=2 idx=0 sport=33440 bytes=40
+2025-10-05 10:29:25.373 | PROBE_SENT mode=raw ttl=2 idx=1 sport=33441 bytes=40
+2025-10-05 10:29:25.373 | PROBE_SENT mode=raw ttl=2 idx=2 sport=33442 bytes=40
+2025-10-05 10:29:25.382 | DEST_REPLY type=SYN-ACK sport=33440 rtt_ms=8.262676
+2025-10-05 10:29:25.382 | DEST_REPLY type=SYN-ACK sport=33441 rtt_ms=8.648066
+2025-10-05 10:29:25.382 | DEST_REPLY type=SYN-ACK sport=33442 rtt_ms=9.078601
+2025-10-05 10:29:25.382 | HOP_SUMMARY ttl=2 replies=3 reached=1
+2025-10-05 10:29:25.382 | STOP: destination reached at ttl=2
+2025-10-05 10:29:25.382 | DIAG: Only local gateway and destination responded; intermediate ICMP Time Exceeded likely blocked or not translated by NAT/bridge.
+=== geo_tracer diag end 2025-10-05 10:29:25.905 ===
+=== geo_tracer diag start 2025-10-05 10:29:49.772 ===
+2025-10-05 10:29:49.783 | SETUP src=192.168.48.130 dst=144.120.198.5:443 mode=raw
+2025-10-05 10:29:49.783 | HOP 1: send 3 probes
+2025-10-05 10:29:49.783 | PROBE_SENT mode=raw ttl=1 idx=0 sport=33437 bytes=40
+2025-10-05 10:29:49.783 | PROBE_SENT mode=raw ttl=1 idx=1 sport=33438 bytes=40
+2025-10-05 10:29:49.783 | PROBE_SENT mode=raw ttl=1 idx=2 sport=33439 bytes=40
+2025-10-05 10:29:49.784 | ICMP_TIME_EXCEEDED from=192.168.48.2 sport=33437 inner_ttl=1 rtt_ms=0.620625
+2025-10-05 10:29:49.784 | ICMP_TIME_EXCEEDED from=192.168.48.2 sport=33438 inner_ttl=1 rtt_ms=0.587151
+2025-10-05 10:29:49.784 | ICMP_TIME_EXCEEDED from=192.168.48.2 sport=33439 inner_ttl=1 rtt_ms=0.540213
+2025-10-05 10:29:49.784 | HOP_SUMMARY ttl=1 replies=3 reached=0
+2025-10-05 10:29:49.784 | HOP 2: send 3 probes
+2025-10-05 10:29:49.784 | PROBE_SENT mode=raw ttl=2 idx=0 sport=33440 bytes=40
+2025-10-05 10:29:49.784 | PROBE_SENT mode=raw ttl=2 idx=1 sport=33441 bytes=40
+2025-10-05 10:29:49.784 | PROBE_SENT mode=raw ttl=2 idx=2 sport=33442 bytes=40
+2025-10-05 10:29:50.044 | DEST_REPLY type=SYN-ACK sport=33440 rtt_ms=260.333981
+2025-10-05 10:29:50.044 | DEST_REPLY type=SYN-ACK sport=33442 rtt_ms=260.401971
+2025-10-05 10:29:50.044 | DEST_REPLY type=SYN-ACK sport=33441 rtt_ms=260.457123
+2025-10-05 10:29:50.044 | HOP_SUMMARY ttl=2 replies=3 reached=1
+2025-10-05 10:29:50.044 | STOP: destination reached at ttl=2
+2025-10-05 10:29:50.044 | DIAG: Only local gateway and destination responded; intermediate ICMP Time Exceeded likely blocked or not translated by NAT/bridge.
+=== geo_tracer diag end 2025-10-05 10:29:50.540 ===
+=== geo_tracer diag start 2025-10-05 10:30:10.151 ===
+2025-10-05 10:30:10.235 | SETUP src=192.168.48.130 dst=121.53.105.193:443 mode=raw
+2025-10-05 10:30:10.235 | HOP 1: send 3 probes
+2025-10-05 10:30:10.235 | PROBE_SENT mode=raw ttl=1 idx=0 sport=33437 bytes=40
+2025-10-05 10:30:10.235 | PROBE_SENT mode=raw ttl=1 idx=1 sport=33438 bytes=40
+2025-10-05 10:30:10.235 | PROBE_SENT mode=raw ttl=1 idx=2 sport=33439 bytes=40
+2025-10-05 10:30:10.235 | ICMP_TIME_EXCEEDED from=192.168.48.2 sport=33437 inner_ttl=1 rtt_ms=0.271294
+2025-10-05 10:30:10.235 | ICMP_TIME_EXCEEDED from=192.168.48.2 sport=33438 inner_ttl=1 rtt_ms=0.263624
+2025-10-05 10:30:10.235 | ICMP_TIME_EXCEEDED from=192.168.48.2 sport=33439 inner_ttl=1 rtt_ms=0.259039
+2025-10-05 10:30:10.235 | HOP_SUMMARY ttl=1 replies=3 reached=0
+2025-10-05 10:30:10.235 | HOP 2: send 3 probes
+2025-10-05 10:30:10.235 | PROBE_SENT mode=raw ttl=2 idx=0 sport=33440 bytes=40
+2025-10-05 10:30:10.235 | PROBE_SENT mode=raw ttl=2 idx=1 sport=33441 bytes=40
+2025-10-05 10:30:10.235 | PROBE_SENT mode=raw ttl=2 idx=2 sport=33442 bytes=40
+2025-10-05 10:30:10.335 | DEST_REPLY type=SYN-ACK sport=33440 rtt_ms=99.498989
+2025-10-05 10:30:10.335 | DEST_REPLY type=SYN-ACK sport=33442 rtt_ms=99.558933
+2025-10-05 10:30:10.339 | DEST_REPLY type=SYN-ACK sport=33441 rtt_ms=103.341504
+2025-10-05 10:30:10.339 | HOP_SUMMARY ttl=2 replies=3 reached=1
+2025-10-05 10:30:10.339 | STOP: destination reached at ttl=2
+2025-10-05 10:30:10.339 | DIAG: Only local gateway and destination responded; intermediate ICMP Time Exceeded likely blocked or not translated by NAT/bridge.
+=== geo_tracer diag end 2025-10-05 10:30:10.872 ===
+=== geo_tracer diag start 2025-10-05 10:30:48.324 ===
+2025-10-05 10:30:48.350 | SETUP src=192.168.48.130 dst=137.158.159.192:443 mode=raw
+2025-10-05 10:30:48.351 | HOP 1: send 3 probes
+2025-10-05 10:30:48.351 | PROBE_SENT mode=raw ttl=1 idx=0 sport=33437 bytes=40
+2025-10-05 10:30:48.351 | PROBE_SENT mode=raw ttl=1 idx=1 sport=33438 bytes=40
+2025-10-05 10:30:48.351 | PROBE_SENT mode=raw ttl=1 idx=2 sport=33439 bytes=40
+2025-10-05 10:30:48.352 | ICMP_TIME_EXCEEDED from=192.168.48.2 sport=33437 inner_ttl=1 rtt_ms=1.002254
+2025-10-05 10:30:48.352 | ICMP_TIME_EXCEEDED from=192.168.48.2 sport=33438 inner_ttl=1 rtt_ms=0.957747
+2025-10-05 10:30:48.352 | ICMP_TIME_EXCEEDED from=192.168.48.2 sport=33439 inner_ttl=1 rtt_ms=0.913614
+2025-10-05 10:30:48.352 | HOP_SUMMARY ttl=1 replies=3 reached=0
+2025-10-05 10:30:48.352 | HOP 2: send 3 probes
+2025-10-05 10:30:48.352 | PROBE_SENT mode=raw ttl=2 idx=0 sport=33440 bytes=40
+2025-10-05 10:30:48.353 | PROBE_SENT mode=raw ttl=2 idx=1 sport=33441 bytes=40
+2025-10-05 10:30:48.353 | PROBE_SENT mode=raw ttl=2 idx=2 sport=33442 bytes=40
+2025-10-05 10:30:48.742 | DEST_REPLY type=SYN-ACK sport=33440 rtt_ms=389.666421
+2025-10-05 10:30:48.742 | DEST_REPLY type=SYN-ACK sport=33442 rtt_ms=389.514813
+2025-10-05 10:30:48.742 | DEST_REPLY type=SYN-ACK sport=33441 rtt_ms=389.653044
+2025-10-05 10:30:48.742 | HOP_SUMMARY ttl=2 replies=3 reached=1
+2025-10-05 10:30:48.742 | STOP: destination reached at ttl=2
+2025-10-05 10:30:48.742 | DIAG: Only local gateway and destination responded; intermediate ICMP Time Exceeded likely blocked or not translated by NAT/bridge.
+=== geo_tracer diag end 2025-10-05 10:30:49.242 ===

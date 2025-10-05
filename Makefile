@@ -34,6 +34,7 @@ TRACE_OBJS := \
   $(BUILD_DIR)/$(SRC_DIR)/icmp_listener.o \
   $(BUILD_DIR)/$(SRC_DIR)/tcp_probe.o \
   $(BUILD_DIR)/$(SRC_DIR)/diag_logger.o \
+  $(BUILD_DIR)/$(SRC_DIR)/utils_net.o \
   $(BUILD_DIR)/$(SRC_DIR)/geo_resolver.o
 
 .PHONY: all clean dirs help \
