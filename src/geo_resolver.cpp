@@ -44,13 +44,14 @@ namespace geo
     std::optional<GeoInfo> GeoResolver::lookup(const std::string &ip)
     {
         const std::string host = "ip-api.com";
-        const std::string path = "/json/" + ip + "?fields=status,country,city,lat,lon";
+        // include ASN/ISP/org fields
+        const std::string path = "/json/" + ip + "?fields=status,country,city,lat,lon,isp,org,as,asname";
         std::string resp = http_get(host, path);
         if (resp.empty())
             return std::nullopt;
         std::string body = extract_body(resp);
 
-        if (body.find("\"success\"") == std::string::npos && body.find("\"status\":\"success\"") == std::string::npos)
+        if (body.find("\"status\":\"success\"") == std::string::npos)
         {
             return std::nullopt;
         }
@@ -58,19 +59,27 @@ namespace geo
         GeoInfo g{};
         g.ip = ip;
         std::smatch m;
-        std::regex re_country("\"country\":\"([^\"]*)\"");
-        std::regex re_city("\"city\":\"([^\"]*)\"");
-        std::regex re_lat("\"lat\":([-0-9.]+)");
-        std::regex re_lon("\"lon\":([-0-9.]+)");
+        auto grab = [&](const std::regex &re)
+        { return std::regex_search(body, m, re) ? m[1].str() : std::string(); };
 
-        if (std::regex_search(body, m, re_country))
-            g.country = m[1];
-        if (std::regex_search(body, m, re_city))
-            g.city = m[1];
-        if (std::regex_search(body, m, re_lat))
-            g.lat = std::stod(m[1]);
-        if (std::regex_search(body, m, re_lon))
-            g.lon = std::stod(m[1]);
+        g.country = grab(std::regex("\"country\":\"([^\"]*)\""));
+        g.city = grab(std::regex("\"city\":\"([^\"]*)\""));
+        std::string slat = grab(std::regex("\"lat\":([-0-9.]+)"));
+        std::string slon = grab(std::regex("\"lon\":([-0-9.]+)"));
+        if (!slat.empty())
+            g.lat = std::stod(slat);
+        if (!slon.empty())
+            g.lon = std::stod(slon);
+        g.isp = grab(std::regex("\"isp\":\"([^\"]*)\""));
+        g.org = grab(std::regex("\"org\":\"([^\"]*)\""));
+        g.as_text = grab(std::regex("\"as\":\"([^\"]*)\""));
+        g.as_name = grab(std::regex("\"asname\":\"([^\"]*)\""));
+
+        // Extract "ASnnnnn" prefix from as_text
+        std::smatch am;
+        if (std::regex_search(g.as_text, am, std::regex("(AS\d+)")))
+            g.asn = am[1];
+
         return g;
     }
 } // namespace geo
