@@ -1,3 +1,8 @@
+/**
+ * # build just the tracer
+ * make trace     # alias: make geo_trace
+ * sudo ./bin/geo_trace cloudflare.com 443
+ */
 // main_trace.cpp
 #include <chrono>
 #include <cstring>

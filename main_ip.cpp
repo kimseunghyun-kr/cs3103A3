@@ -1,4 +1,9 @@
-// ===================== main.cpp =====================
+/**
+ * # build just the IP client
+ * make ip        # aliases: make find_ip, make geo_ip
+ * ./bin/geo_ip https://varlabs.comp.nus.edu.sg/tools/yourip.php
+*/
+// ===================== main_ip.cpp =====================
 #include <iostream>
 #include <regex>
 #include <string>
