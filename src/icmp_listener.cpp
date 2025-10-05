@@ -4,8 +4,7 @@
 #include <arpa/inet.h>
 #include <array>
 #include <cstring>
-#include <netinet/ip.h>
-#include <netinet/ip_icmp.h>
+#include "net_compat.hpp"
 #include <optional>
 #include <string>
 #include <sys/socket.h>

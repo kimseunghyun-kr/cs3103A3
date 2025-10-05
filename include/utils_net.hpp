@@ -1,7 +1,7 @@
 #pragma once
 #include <cstddef>
 #include <cstdint>
-#include <netinet/ip.h>   // iphdr
+#include "net_compat.hpp"   // iphdr
 #include <netinet/tcp.h>  // tcphdr
 
 namespace geo::net {

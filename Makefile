@@ -1,9 +1,18 @@
+# ==============================================================
 # Makefile: builds two binaries
 #   bin/geo_ip    -> HTTP/HTTPS public-IP client (uses OpenSSL)
 #   bin/geo_trace -> TCP geotracer (raw sockets)
+# ==============================================================
 
 CXX      := g++
 CXXFLAGS := -std=c++17 -O2 -Iinclude -Wall -Wextra -Wpedantic -MMD -MP
+
+# Detect macOS and configure OpenSSL include/lib paths (Homebrew)
+ifeq ($(shell uname -s),Darwin)
+OPENSSL_PREFIX := $(shell brew --prefix openssl@3)
+CXXFLAGS += -I$(OPENSSL_PREFIX)/include
+LDFLAGS  += -L$(OPENSSL_PREFIX)/lib
+endif
 
 LDLIBS_IP    := -lssl -lcrypto
 LDLIBS_TRACE :=
@@ -41,10 +50,14 @@ TRACE_OBJS := \
         ip find_ip geo_ip \
         trace geo_trace
 
+# ==============================================================
+# Default targets
+# ==============================================================
+
 # Build both by default
 all: ip trace
 
-# Phonies to build one at a time (aliases provided)
+# Build individual targets (aliases)
 ip find_ip geo_ip: dirs $(IP_BIN)
 trace geo_trace:   dirs $(TRACE_BIN)
 
@@ -52,22 +65,33 @@ trace geo_trace:   dirs $(TRACE_BIN)
 dirs:
 	@mkdir -p $(BUILD_DIR)/$(SRC_DIR) $(BIN_DIR)
 
+# ==============================================================
 # Link rules
+# ==============================================================
+
 $(IP_BIN): $(IP_OBJS)
-	$(CXX) $(CXXFLAGS) $^ -o $@ $(LDLIBS_IP)
+	$(CXX) $(CXXFLAGS) $(LDFLAGS) $^ -o $@ $(LDLIBS_IP)
 
 $(TRACE_BIN): $(TRACE_OBJS)
-	$(CXX) $(CXXFLAGS) $^ -o $@ $(LDLIBS_TRACE)
+	$(CXX) $(CXXFLAGS) $(LDFLAGS) $^ -o $@ $(LDLIBS_TRACE)
 
-# Compile rules (root-level mains)
+# ==============================================================
+# Compile rules
+# ==============================================================
+
+# Root-level mains
 $(BUILD_DIR)/%.o: %.cpp
 	@mkdir -p $(dir $@)
 	$(CXX) $(CXXFLAGS) -c $< -o $@
 
-# Compile rules (src/*.cpp)
+# src/*.cpp
 $(BUILD_DIR)/$(SRC_DIR)/%.o: $(SRC_DIR)/%.cpp
 	@mkdir -p $(dir $@)
 	$(CXX) $(CXXFLAGS) -c $< -o $@
+
+# ==============================================================
+# Housekeeping
+# ==============================================================
 
 clean:
 	rm -rf $(BUILD_DIR) $(BIN_DIR)

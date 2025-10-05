@@ -15,7 +15,7 @@
 #include <vector>
 
 #include <arpa/inet.h>
-#include <netinet/ip.h>
+#include "net_compat.hpp"
 #include <netinet/tcp.h>
 #include <sys/select.h>
 #include <sys/socket.h>
