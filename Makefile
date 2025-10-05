@@ -42,9 +42,13 @@ TRACE_OBJS := \
   $(BUILD_DIR)/$(SRC_DIR)/tcp_socket.o \
   $(BUILD_DIR)/$(SRC_DIR)/icmp_listener.o \
   $(BUILD_DIR)/$(SRC_DIR)/tcp_probe.o \
+  $(BUILD_DIR)/$(SRC_DIR)/tcp_probe_common.o \
+  $(BUILD_DIR)/$(SRC_DIR)/tcp_probe_raw.o \
+  $(BUILD_DIR)/$(SRC_DIR)/tcp_probe_connect.o \
   $(BUILD_DIR)/$(SRC_DIR)/diag_logger.o \
   $(BUILD_DIR)/$(SRC_DIR)/utils_net.o \
   $(BUILD_DIR)/$(SRC_DIR)/geo_resolver.o
+
 
 .PHONY: all clean dirs help \
         ip find_ip geo_ip \
