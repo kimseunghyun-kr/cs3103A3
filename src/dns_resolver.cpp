@@ -12,14 +12,20 @@ namespace geo
         addrinfo hints{};
         hints.ai_family = AF_UNSPEC;
         hints.ai_socktype = SOCK_STREAM;
-        addrinfo *res = nullptr;
+        hints.ai_flags = AI_ADDRCONFIG;
 
+        addrinfo *res = nullptr;
         const std::string portStr = std::to_string(port);
         int status = getaddrinfo(host.c_str(), portStr.c_str(), &hints, &res);
         if (status != 0)
         {
-            throw std::runtime_error(std::string("DNS resolution failed for ") + host + ": " + gai_strerror(status));
+            // fallback to IPv4 if AF_UNSPEC failed
+            hints.ai_family = AF_INET;
+            hints.ai_flags = 0;
+            status = getaddrinfo(host.c_str(), portStr.c_str(), &hints, &res);
         }
+        if (status != 0)
+            throw std::runtime_error(std::string("DNS resolution failed for ") + host + ": " + gai_strerror(status));
 
         for (auto *p = res; p != nullptr; p = p->ai_next)
         {

@@ -1,0 +1,43 @@
+=== geo_tracer diag start 2025-10-05 14:49:42.270 ===
+2025-10-05 14:49:42.270 | SETUP src=192.168.48.130 dst=172.66.150.140:443 mode=connect
+2025-10-05 14:49:42.270 | HOP 1: send 3 probes
+2025-10-05 14:49:42.270 | PROBE_SENT mode=connect ttl=1 idx=0 sport=33437
+2025-10-05 14:49:42.270 | PROBE_SENT mode=connect ttl=1 idx=1 sport=33438
+2025-10-05 14:49:42.270 | PROBE_SENT mode=connect ttl=1 idx=2 sport=33439
+2025-10-05 14:49:44.271 | HOP_SUMMARY ttl=1 replies=0 reached=0
+2025-10-05 14:49:44.271 | NO_ICMP_THIS_HOP ttl=1 (timeout)
+2025-10-05 14:49:44.271 | HOP 2: send 3 probes
+2025-10-05 14:49:44.271 | PROBE_SENT mode=connect ttl=2 idx=0 sport=33440
+2025-10-05 14:49:44.271 | PROBE_SENT mode=connect ttl=2 idx=1 sport=33441
+2025-10-05 14:49:44.271 | PROBE_SENT mode=connect ttl=2 idx=2 sport=33442
+2025-10-05 14:49:44.279 | DEST_REPLY type=SYN-ACK sport=33440 rtt_ms=8.351346
+2025-10-05 14:49:44.280 | DEST_REPLY type=SYN-ACK sport=33441 rtt_ms=9.100586
+2025-10-05 14:49:44.280 | DEST_REPLY type=SYN-ACK sport=33442 rtt_ms=9.167877
+2025-10-05 14:49:44.280 | HOP_SUMMARY ttl=2 replies=3 reached=1
+2025-10-05 14:49:44.280 | STOP: destination reached at ttl=2
+2025-10-05 14:49:44.280 | DIAG: Only local gateway and destination responded; intermediate ICMP Time Exceeded likely blocked or not translated by NAT/bridge.
+=== geo_tracer diag end 2025-10-05 14:49:44.550 ===
+=== geo_tracer diag start 2025-10-05 14:49:48.836 ===
+2025-10-05 14:49:48.837 | SETUP src=192.168.48.130 dst=104.20.45.173:443 mode=connect
+2025-10-05 14:49:48.837 | HOP 1: send 3 probes
+2025-10-05 14:49:48.837 | PROBE_SENT mode=connect ttl=1 idx=0 sport=33437
+2025-10-05 14:49:48.837 | PROBE_SENT mode=connect ttl=1 idx=1 sport=33438
+2025-10-05 14:49:48.837 | PROBE_SENT mode=connect ttl=1 idx=2 sport=33439
+2025-10-05 14:49:50.839 | HOP_SUMMARY ttl=1 replies=0 reached=0
+2025-10-05 14:49:50.839 | NO_ICMP_THIS_HOP ttl=1 (timeout)
+2025-10-05 14:49:50.839 | HOP 2: send 3 probes
+2025-10-05 14:49:50.839 | PROBE_SENT mode=connect ttl=2 idx=0 sport=33440
+2025-10-05 14:49:50.839 | PROBE_SENT mode=connect ttl=2 idx=1 sport=33441
+2025-10-05 14:49:50.839 | PROBE_SENT mode=connect ttl=2 idx=2 sport=33442
+2025-10-05 14:49:52.841 | HOP_SUMMARY ttl=2 replies=0 reached=0
+2025-10-05 14:49:52.841 | NO_ICMP_THIS_HOP ttl=2 (timeout)
+2025-10-05 14:49:52.841 | HOP 3: send 3 probes
+2025-10-05 14:49:52.841 | PROBE_SENT mode=connect ttl=3 idx=0 sport=33443
+2025-10-05 14:49:52.841 | PROBE_SENT mode=connect ttl=3 idx=1 sport=33444
+2025-10-05 14:49:52.841 | PROBE_SENT mode=connect ttl=3 idx=2 sport=33445
+2025-10-05 14:49:52.853 | DEST_REPLY type=SYN-ACK sport=33444 rtt_ms=11.781633
+2025-10-05 14:49:52.853 | DEST_REPLY type=SYN-ACK sport=33445 rtt_ms=11.752300
+2025-10-05 14:49:52.853 | DEST_REPLY type=SYN-ACK sport=33443 rtt_ms=12.207836
+2025-10-05 14:49:52.854 | HOP_SUMMARY ttl=3 replies=3 reached=1
+2025-10-05 14:49:52.854 | STOP: destination reached at ttl=3
+=== geo_tracer diag end 2025-10-05 14:49:53.093 ===

@@ -100,8 +100,27 @@ namespace geo
 
         // Receive sockets
         IcmpListener icmp;
-        if (!icmp.open())
-            throw std::runtime_error("Need CAP_NET_RAW/root for ICMP");
+        bool ok = false;
+
+        switch (mode)
+        {
+        case SendMode::Raw:
+            ok = icmp.open(IcmpListener::OpenMode::RawOnly);
+            break;
+
+        case SendMode::Connect:
+            // connect-mode = NAT-friendly path (DGRAM)
+            ok = icmp.open(IcmpListener::OpenMode::DatagramOnly);
+            break;
+
+        case SendMode::Auto:
+            ok = icmp.open(IcmpListener::OpenMode::Auto);
+            break;
+        }
+
+        if (!ok)
+            throw std::runtime_error("Failed to open ICMP socket (need CAP_NET_RAW/root)");
+
         int tcp_recv_sock = ::socket(AF_INET, SOCK_RAW, IPPROTO_TCP);
         if (tcp_recv_sock < 0)
             throw std::runtime_error("Need CAP_NET_RAW/root to sniff TCP");
@@ -314,7 +333,7 @@ namespace geo
                             if (it != in_flight.end() && !it->second.done && ip->saddr == dst_ip.s_addr)
                             {
                                 bool synack = (TCP_IS_SYN(tcp) && TCP_IS_ACK(tcp));
-                                bool rst    = TCP_IS_RST(tcp);
+                                bool rst = TCP_IS_RST(tcp);
                                 if (synack || rst)
                                 {
                                     double rtt = std::chrono::duration<double, std::milli>(clk::now() - it->second.t0).count();

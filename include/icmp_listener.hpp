@@ -16,11 +16,12 @@ namespace geo
             int orig_ttl;        // TTL of the dropped probe (best-effort)
         };
 
-        bool open();
+        enum class OpenMode { RawOnly, DatagramOnly, Auto };  // <-- new
+
+        bool open(OpenMode mode = OpenMode::RawOnly);  // <-- changed
         void close();
         int fd() const { return fd_; }
 
-        // Call after select() signals readability on fd(). Returns parsed Time Exceeded if any.
         std::optional<TimeExceeded> recv_time_exceeded();
 
     private:

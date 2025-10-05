@@ -14,12 +14,37 @@
 namespace geo
 {
 
-    bool IcmpListener::open()
+    bool IcmpListener::open(OpenMode mode)
     {
         if (fd_ != -1)
             return true;
-        fd_ = ::socket(AF_INET, SOCK_RAW, IPPROTO_ICMP);
-        return fd_ >= 0;
+
+        if (mode == OpenMode::RawOnly)
+        {
+            fd_ = ::socket(AF_INET, SOCK_RAW, IPPROTO_ICMP);
+        }
+        else if (mode == OpenMode::DatagramOnly)
+        {
+            // NAT-safe fallback (used in connect mode)
+            fd_ = ::socket(AF_INET, SOCK_DGRAM, IPPROTO_ICMP);
+        }
+        else
+        { // Auto
+            // Try raw first for assignment compliance
+            fd_ = ::socket(AF_INET, SOCK_RAW, IPPROTO_ICMP);
+            if (fd_ < 0)
+            {
+                // Fallback: NAT-friendly kernel ICMP
+                fd_ = ::socket(AF_INET, SOCK_DGRAM, IPPROTO_ICMP);
+            }
+        }
+
+        if (fd_ < 0)
+            return false;
+
+        struct timeval tv{1, 0};
+        setsockopt(fd_, SOL_SOCKET, SO_RCVTIMEO, &tv, sizeof(tv));
+        return true;
     }
 
     void IcmpListener::close()
