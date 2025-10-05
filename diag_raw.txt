@@ -1,0 +1,768 @@
+=== geo_tracer diag start 2025-10-05 10:07:46.309 ===
+2025-10-05 10:07:46.554 | SETUP src=192.168.48.130 dst=144.120.198.5:443 mode=raw
+2025-10-05 10:07:46.554 | HOP 1: send 3 probes
+2025-10-05 10:07:46.554 | PROBE_SENT mode=raw ttl=1 idx=0 sport=33437
+2025-10-05 10:07:46.554 | PROBE_SENT mode=raw ttl=1 idx=1 sport=33438
+2025-10-05 10:07:46.555 | PROBE_SENT mode=raw ttl=1 idx=2 sport=33439
+2025-10-05 10:07:46.555 | ICMP_TIME_EXCEEDED from=192.168.48.2 sport=33437 inner_ttl=1 rtt_ms=1.155757
+2025-10-05 10:07:46.555 | ICMP_TIME_EXCEEDED from=192.168.48.2 sport=33438 inner_ttl=1 rtt_ms=1.273212
+2025-10-05 10:07:46.555 | ICMP_TIME_EXCEEDED from=192.168.48.2 sport=33439 inner_ttl=1 rtt_ms=0.933222
+2025-10-05 10:07:46.555 | HOP_SUMMARY ttl=1 replies=3 reached=0
+2025-10-05 10:07:46.555 | HOP 2: send 3 probes
+2025-10-05 10:07:46.555 | PROBE_SENT mode=raw ttl=2 idx=0 sport=33440
+2025-10-05 10:07:46.556 | PROBE_SENT mode=raw ttl=2 idx=1 sport=33441
+2025-10-05 10:07:46.556 | PROBE_SENT mode=raw ttl=2 idx=2 sport=33442
+2025-10-05 10:07:48.558 | HOP_SUMMARY ttl=2 replies=0 reached=0
+2025-10-05 10:07:48.558 | NO_ICMP_THIS_HOP ttl=2 (timeout)
+2025-10-05 10:07:48.558 | HOP 3: send 3 probes
+2025-10-05 10:07:48.558 | PROBE_SENT mode=raw ttl=3 idx=0 sport=33443
+2025-10-05 10:07:48.558 | PROBE_SENT mode=raw ttl=3 idx=1 sport=33444
+2025-10-05 10:07:48.559 | PROBE_SENT mode=raw ttl=3 idx=2 sport=33445
+2025-10-05 10:07:50.560 | HOP_SUMMARY ttl=3 replies=0 reached=0
+2025-10-05 10:07:50.561 | NO_ICMP_THIS_HOP ttl=3 (timeout)
+2025-10-05 10:07:50.561 | HOP 4: send 3 probes
+2025-10-05 10:07:50.561 | PROBE_SENT mode=raw ttl=4 idx=0 sport=33446
+2025-10-05 10:07:50.561 | PROBE_SENT mode=raw ttl=4 idx=1 sport=33447
+2025-10-05 10:07:50.561 | PROBE_SENT mode=raw ttl=4 idx=2 sport=33448
+2025-10-05 10:07:52.562 | HOP_SUMMARY ttl=4 replies=0 reached=0
+2025-10-05 10:07:52.562 | NO_ICMP_THIS_HOP ttl=4 (timeout)
+2025-10-05 10:07:52.562 | HOP 5: send 3 probes
+2025-10-05 10:07:52.562 | PROBE_SENT mode=raw ttl=5 idx=0 sport=33449
+2025-10-05 10:07:52.563 | PROBE_SENT mode=raw ttl=5 idx=1 sport=33450
+2025-10-05 10:07:52.563 | PROBE_SENT mode=raw ttl=5 idx=2 sport=33451
+2025-10-05 10:07:54.564 | HOP_SUMMARY ttl=5 replies=0 reached=0
+2025-10-05 10:07:54.565 | NO_ICMP_THIS_HOP ttl=5 (timeout)
+2025-10-05 10:07:54.565 | HOP 6: send 3 probes
+2025-10-05 10:07:54.565 | PROBE_SENT mode=raw ttl=6 idx=0 sport=33452
+2025-10-05 10:07:54.565 | PROBE_SENT mode=raw ttl=6 idx=1 sport=33453
+2025-10-05 10:07:54.565 | PROBE_SENT mode=raw ttl=6 idx=2 sport=33454
+2025-10-05 10:07:56.567 | HOP_SUMMARY ttl=6 replies=0 reached=0
+2025-10-05 10:07:56.567 | NO_ICMP_THIS_HOP ttl=6 (timeout)
+2025-10-05 10:07:56.567 | HOP 7: send 3 probes
+2025-10-05 10:07:56.567 | PROBE_SENT mode=raw ttl=7 idx=0 sport=33455
+2025-10-05 10:07:56.567 | PROBE_SENT mode=raw ttl=7 idx=1 sport=33456
+2025-10-05 10:07:56.567 | PROBE_SENT mode=raw ttl=7 idx=2 sport=33457
+2025-10-05 10:07:58.568 | HOP_SUMMARY ttl=7 replies=0 reached=0
+2025-10-05 10:07:58.568 | NO_ICMP_THIS_HOP ttl=7 (timeout)
+2025-10-05 10:07:58.568 | HOP 8: send 3 probes
+2025-10-05 10:07:58.568 | PROBE_SENT mode=raw ttl=8 idx=0 sport=33458
+2025-10-05 10:07:58.568 | PROBE_SENT mode=raw ttl=8 idx=1 sport=33459
+2025-10-05 10:07:58.568 | PROBE_SENT mode=raw ttl=8 idx=2 sport=33460
+2025-10-05 10:08:00.569 | HOP_SUMMARY ttl=8 replies=0 reached=0
+2025-10-05 10:08:00.569 | NO_ICMP_THIS_HOP ttl=8 (timeout)
+2025-10-05 10:08:00.569 | HOP 9: send 3 probes
+2025-10-05 10:08:00.570 | PROBE_SENT mode=raw ttl=9 idx=0 sport=33461
+2025-10-05 10:08:00.570 | PROBE_SENT mode=raw ttl=9 idx=1 sport=33462
+2025-10-05 10:08:00.570 | PROBE_SENT mode=raw ttl=9 idx=2 sport=33463
+2025-10-05 10:08:02.570 | HOP_SUMMARY ttl=9 replies=0 reached=0
+2025-10-05 10:08:02.570 | NO_ICMP_THIS_HOP ttl=9 (timeout)
+2025-10-05 10:08:02.570 | HOP 10: send 3 probes
+2025-10-05 10:08:02.570 | PROBE_SENT mode=raw ttl=10 idx=0 sport=33464
+2025-10-05 10:08:02.570 | PROBE_SENT mode=raw ttl=10 idx=1 sport=33465
+2025-10-05 10:08:02.570 | PROBE_SENT mode=raw ttl=10 idx=2 sport=33466
+2025-10-05 10:08:04.571 | HOP_SUMMARY ttl=10 replies=0 reached=0
+2025-10-05 10:08:04.571 | NO_ICMP_THIS_HOP ttl=10 (timeout)
+2025-10-05 10:08:04.571 | HOP 11: send 3 probes
+2025-10-05 10:08:04.571 | PROBE_SENT mode=raw ttl=11 idx=0 sport=33467
+2025-10-05 10:08:04.571 | PROBE_SENT mode=raw ttl=11 idx=1 sport=33468
+2025-10-05 10:08:04.571 | PROBE_SENT mode=raw ttl=11 idx=2 sport=33469
+2025-10-05 10:08:06.572 | HOP_SUMMARY ttl=11 replies=0 reached=0
+2025-10-05 10:08:06.572 | NO_ICMP_THIS_HOP ttl=11 (timeout)
+2025-10-05 10:08:06.572 | HOP 12: send 3 probes
+2025-10-05 10:08:06.572 | PROBE_SENT mode=raw ttl=12 idx=0 sport=33470
+2025-10-05 10:08:06.574 | PROBE_SENT mode=raw ttl=12 idx=1 sport=33471
+2025-10-05 10:08:06.574 | PROBE_SENT mode=raw ttl=12 idx=2 sport=33472
+2025-10-05 10:08:08.574 | HOP_SUMMARY ttl=12 replies=0 reached=0
+2025-10-05 10:08:08.575 | NO_ICMP_THIS_HOP ttl=12 (timeout)
+2025-10-05 10:08:08.575 | HOP 13: send 3 probes
+2025-10-05 10:08:08.575 | PROBE_SENT mode=raw ttl=13 idx=0 sport=33473
+2025-10-05 10:08:08.575 | PROBE_SENT mode=raw ttl=13 idx=1 sport=33474
+2025-10-05 10:08:08.575 | PROBE_SENT mode=raw ttl=13 idx=2 sport=33475
+2025-10-05 10:08:10.576 | HOP_SUMMARY ttl=13 replies=0 reached=0
+2025-10-05 10:08:10.576 | NO_ICMP_THIS_HOP ttl=13 (timeout)
+2025-10-05 10:08:10.576 | HOP 14: send 3 probes
+2025-10-05 10:08:10.576 | PROBE_SENT mode=raw ttl=14 idx=0 sport=33476
+2025-10-05 10:08:10.576 | PROBE_SENT mode=raw ttl=14 idx=1 sport=33477
+2025-10-05 10:08:10.576 | PROBE_SENT mode=raw ttl=14 idx=2 sport=33478
+2025-10-05 10:08:12.577 | HOP_SUMMARY ttl=14 replies=0 reached=0
+2025-10-05 10:08:12.577 | NO_ICMP_THIS_HOP ttl=14 (timeout)
+2025-10-05 10:08:12.577 | HOP 15: send 3 probes
+2025-10-05 10:08:12.577 | PROBE_SENT mode=raw ttl=15 idx=0 sport=33479
+2025-10-05 10:08:12.579 | PROBE_SENT mode=raw ttl=15 idx=1 sport=33480
+2025-10-05 10:08:12.579 | PROBE_SENT mode=raw ttl=15 idx=2 sport=33481
+2025-10-05 10:08:14.579 | HOP_SUMMARY ttl=15 replies=0 reached=0
+2025-10-05 10:08:14.579 | NO_ICMP_THIS_HOP ttl=15 (timeout)
+2025-10-05 10:08:14.579 | HOP 16: send 3 probes
+2025-10-05 10:08:14.579 | PROBE_SENT mode=raw ttl=16 idx=0 sport=33482
+2025-10-05 10:08:14.579 | PROBE_SENT mode=raw ttl=16 idx=1 sport=33483
+2025-10-05 10:08:14.579 | PROBE_SENT mode=raw ttl=16 idx=2 sport=33484
+2025-10-05 10:08:16.580 | HOP_SUMMARY ttl=16 replies=0 reached=0
+2025-10-05 10:08:16.581 | NO_ICMP_THIS_HOP ttl=16 (timeout)
+2025-10-05 10:08:16.581 | HOP 17: send 3 probes
+2025-10-05 10:08:16.581 | PROBE_SENT mode=raw ttl=17 idx=0 sport=33485
+2025-10-05 10:08:16.581 | PROBE_SENT mode=raw ttl=17 idx=1 sport=33486
+2025-10-05 10:08:16.582 | PROBE_SENT mode=raw ttl=17 idx=2 sport=33487
+2025-10-05 10:08:18.582 | HOP_SUMMARY ttl=17 replies=0 reached=0
+2025-10-05 10:08:18.582 | NO_ICMP_THIS_HOP ttl=17 (timeout)
+2025-10-05 10:08:18.582 | HOP 18: send 3 probes
+2025-10-05 10:08:18.582 | PROBE_SENT mode=raw ttl=18 idx=0 sport=33488
+2025-10-05 10:08:18.582 | PROBE_SENT mode=raw ttl=18 idx=1 sport=33489
+2025-10-05 10:08:18.582 | PROBE_SENT mode=raw ttl=18 idx=2 sport=33490
+2025-10-05 10:08:20.583 | HOP_SUMMARY ttl=18 replies=0 reached=0
+2025-10-05 10:08:20.584 | NO_ICMP_THIS_HOP ttl=18 (timeout)
+2025-10-05 10:08:20.584 | HOP 19: send 3 probes
+2025-10-05 10:08:20.584 | PROBE_SENT mode=raw ttl=19 idx=0 sport=33491
+2025-10-05 10:08:20.584 | PROBE_SENT mode=raw ttl=19 idx=1 sport=33492
+2025-10-05 10:08:20.585 | PROBE_SENT mode=raw ttl=19 idx=2 sport=33493
+2025-10-05 10:08:22.586 | HOP_SUMMARY ttl=19 replies=0 reached=0
+2025-10-05 10:08:22.586 | NO_ICMP_THIS_HOP ttl=19 (timeout)
+2025-10-05 10:08:22.586 | HOP 20: send 3 probes
+2025-10-05 10:08:22.586 | PROBE_SENT mode=raw ttl=20 idx=0 sport=33494
+2025-10-05 10:08:22.587 | PROBE_SENT mode=raw ttl=20 idx=1 sport=33495
+2025-10-05 10:08:22.587 | PROBE_SENT mode=raw ttl=20 idx=2 sport=33496
+2025-10-05 10:08:24.588 | HOP_SUMMARY ttl=20 replies=0 reached=0
+2025-10-05 10:08:24.589 | NO_ICMP_THIS_HOP ttl=20 (timeout)
+2025-10-05 10:08:24.589 | HOP 21: send 3 probes
+2025-10-05 10:08:24.589 | PROBE_SENT mode=raw ttl=21 idx=0 sport=33497
+2025-10-05 10:08:24.589 | PROBE_SENT mode=raw ttl=21 idx=1 sport=33498
+2025-10-05 10:08:24.589 | PROBE_SENT mode=raw ttl=21 idx=2 sport=33499
+2025-10-05 10:08:26.591 | HOP_SUMMARY ttl=21 replies=0 reached=0
+2025-10-05 10:08:26.591 | NO_ICMP_THIS_HOP ttl=21 (timeout)
+2025-10-05 10:08:26.591 | HOP 22: send 3 probes
+2025-10-05 10:08:26.591 | PROBE_SENT mode=raw ttl=22 idx=0 sport=33500
+2025-10-05 10:08:26.591 | PROBE_SENT mode=raw ttl=22 idx=1 sport=33501
+2025-10-05 10:08:26.591 | PROBE_SENT mode=raw ttl=22 idx=2 sport=33502
+2025-10-05 10:08:28.593 | HOP_SUMMARY ttl=22 replies=0 reached=0
+2025-10-05 10:08:28.593 | NO_ICMP_THIS_HOP ttl=22 (timeout)
+2025-10-05 10:08:28.593 | HOP 23: send 3 probes
+2025-10-05 10:08:28.593 | PROBE_SENT mode=raw ttl=23 idx=0 sport=33503
+2025-10-05 10:08:28.593 | PROBE_SENT mode=raw ttl=23 idx=1 sport=33504
+2025-10-05 10:08:28.593 | PROBE_SENT mode=raw ttl=23 idx=2 sport=33505
+2025-10-05 10:08:30.595 | HOP_SUMMARY ttl=23 replies=0 reached=0
+2025-10-05 10:08:30.596 | NO_ICMP_THIS_HOP ttl=23 (timeout)
+2025-10-05 10:08:30.596 | HOP 24: send 3 probes
+2025-10-05 10:08:30.596 | PROBE_SENT mode=raw ttl=24 idx=0 sport=33506
+2025-10-05 10:08:30.596 | PROBE_SENT mode=raw ttl=24 idx=1 sport=33507
+2025-10-05 10:08:30.596 | PROBE_SENT mode=raw ttl=24 idx=2 sport=33508
+2025-10-05 10:08:32.597 | HOP_SUMMARY ttl=24 replies=0 reached=0
+2025-10-05 10:08:32.597 | NO_ICMP_THIS_HOP ttl=24 (timeout)
+2025-10-05 10:08:32.597 | HOP 25: send 3 probes
+2025-10-05 10:08:32.597 | PROBE_SENT mode=raw ttl=25 idx=0 sport=33509
+2025-10-05 10:08:32.597 | PROBE_SENT mode=raw ttl=25 idx=1 sport=33510
+2025-10-05 10:08:32.597 | PROBE_SENT mode=raw ttl=25 idx=2 sport=33511
+2025-10-05 10:08:34.598 | HOP_SUMMARY ttl=25 replies=0 reached=0
+2025-10-05 10:08:34.598 | NO_ICMP_THIS_HOP ttl=25 (timeout)
+2025-10-05 10:08:34.598 | HOP 26: send 3 probes
+2025-10-05 10:08:34.598 | PROBE_SENT mode=raw ttl=26 idx=0 sport=33512
+2025-10-05 10:08:34.599 | PROBE_SENT mode=raw ttl=26 idx=1 sport=33513
+2025-10-05 10:08:34.599 | PROBE_SENT mode=raw ttl=26 idx=2 sport=33514
+2025-10-05 10:08:36.600 | HOP_SUMMARY ttl=26 replies=0 reached=0
+2025-10-05 10:08:36.601 | NO_ICMP_THIS_HOP ttl=26 (timeout)
+2025-10-05 10:08:36.601 | HOP 27: send 3 probes
+2025-10-05 10:08:36.601 | PROBE_SENT mode=raw ttl=27 idx=0 sport=33515
+2025-10-05 10:08:36.601 | PROBE_SENT mode=raw ttl=27 idx=1 sport=33516
+2025-10-05 10:08:36.601 | PROBE_SENT mode=raw ttl=27 idx=2 sport=33517
+2025-10-05 10:08:38.603 | HOP_SUMMARY ttl=27 replies=0 reached=0
+2025-10-05 10:08:38.603 | NO_ICMP_THIS_HOP ttl=27 (timeout)
+2025-10-05 10:08:38.603 | HOP 28: send 3 probes
+2025-10-05 10:08:38.603 | PROBE_SENT mode=raw ttl=28 idx=0 sport=33518
+2025-10-05 10:08:38.603 | PROBE_SENT mode=raw ttl=28 idx=1 sport=33519
+2025-10-05 10:08:38.603 | PROBE_SENT mode=raw ttl=28 idx=2 sport=33520
+2025-10-05 10:08:40.604 | HOP_SUMMARY ttl=28 replies=0 reached=0
+2025-10-05 10:08:40.604 | NO_ICMP_THIS_HOP ttl=28 (timeout)
+2025-10-05 10:08:40.604 | HOP 29: send 3 probes
+2025-10-05 10:08:40.605 | PROBE_SENT mode=raw ttl=29 idx=0 sport=33521
+2025-10-05 10:08:40.605 | PROBE_SENT mode=raw ttl=29 idx=1 sport=33522
+2025-10-05 10:08:40.605 | PROBE_SENT mode=raw ttl=29 idx=2 sport=33523
+2025-10-05 10:08:42.607 | HOP_SUMMARY ttl=29 replies=0 reached=0
+2025-10-05 10:08:42.607 | NO_ICMP_THIS_HOP ttl=29 (timeout)
+2025-10-05 10:08:42.607 | HOP 30: send 3 probes
+2025-10-05 10:08:42.607 | PROBE_SENT mode=raw ttl=30 idx=0 sport=33524
+2025-10-05 10:08:42.607 | PROBE_SENT mode=raw ttl=30 idx=1 sport=33525
+2025-10-05 10:08:42.607 | PROBE_SENT mode=raw ttl=30 idx=2 sport=33526
+2025-10-05 10:08:44.609 | HOP_SUMMARY ttl=30 replies=0 reached=0
+2025-10-05 10:08:44.609 | NO_ICMP_THIS_HOP ttl=30 (timeout)
+2025-10-05 10:08:44.609 | DIAG: Only local gateway and destination responded; intermediate ICMP Time Exceeded likely blocked or not translated by NAT/bridge.
+=== geo_tracer diag end 2025-10-05 10:08:44.892 ===
+=== geo_tracer diag start 2025-10-05 10:09:27.789 ===
+2025-10-05 10:09:27.798 | SETUP src=192.168.48.130 dst=223.130.192.247:443 mode=raw
+2025-10-05 10:09:27.798 | HOP 1: send 3 probes
+2025-10-05 10:09:27.798 | PROBE_SENT mode=raw ttl=1 idx=0 sport=33437
+2025-10-05 10:09:27.798 | PROBE_SENT mode=raw ttl=1 idx=1 sport=33438
+2025-10-05 10:09:27.798 | PROBE_SENT mode=raw ttl=1 idx=2 sport=33439
+2025-10-05 10:09:27.798 | ICMP_TIME_EXCEEDED from=192.168.48.2 sport=33437 inner_ttl=1 rtt_ms=0.259241
+2025-10-05 10:09:27.798 | ICMP_TIME_EXCEEDED from=192.168.48.2 sport=33438 inner_ttl=1 rtt_ms=0.252909
+2025-10-05 10:09:27.798 | ICMP_TIME_EXCEEDED from=192.168.48.2 sport=33439 inner_ttl=1 rtt_ms=0.248701
+2025-10-05 10:09:27.798 | HOP_SUMMARY ttl=1 replies=3 reached=0
+2025-10-05 10:09:27.798 | HOP 2: send 3 probes
+2025-10-05 10:09:27.798 | PROBE_SENT mode=raw ttl=2 idx=0 sport=33440
+2025-10-05 10:09:27.798 | PROBE_SENT mode=raw ttl=2 idx=1 sport=33441
+2025-10-05 10:09:27.798 | PROBE_SENT mode=raw ttl=2 idx=2 sport=33442
+2025-10-05 10:09:29.799 | HOP_SUMMARY ttl=2 replies=0 reached=0
+2025-10-05 10:09:29.799 | NO_ICMP_THIS_HOP ttl=2 (timeout)
+2025-10-05 10:09:29.799 | HOP 3: send 3 probes
+2025-10-05 10:09:29.800 | PROBE_SENT mode=raw ttl=3 idx=0 sport=33443
+2025-10-05 10:09:29.800 | PROBE_SENT mode=raw ttl=3 idx=1 sport=33444
+2025-10-05 10:09:29.800 | PROBE_SENT mode=raw ttl=3 idx=2 sport=33445
+2025-10-05 10:09:31.801 | HOP_SUMMARY ttl=3 replies=0 reached=0
+2025-10-05 10:09:31.801 | NO_ICMP_THIS_HOP ttl=3 (timeout)
+2025-10-05 10:09:31.801 | HOP 4: send 3 probes
+2025-10-05 10:09:31.801 | PROBE_SENT mode=raw ttl=4 idx=0 sport=33446
+2025-10-05 10:09:31.801 | PROBE_SENT mode=raw ttl=4 idx=1 sport=33447
+2025-10-05 10:09:31.801 | PROBE_SENT mode=raw ttl=4 idx=2 sport=33448
+2025-10-05 10:09:33.803 | HOP_SUMMARY ttl=4 replies=0 reached=0
+2025-10-05 10:09:33.803 | NO_ICMP_THIS_HOP ttl=4 (timeout)
+2025-10-05 10:09:33.804 | HOP 5: send 3 probes
+2025-10-05 10:09:33.804 | PROBE_SENT mode=raw ttl=5 idx=0 sport=33449
+2025-10-05 10:09:33.804 | PROBE_SENT mode=raw ttl=5 idx=1 sport=33450
+2025-10-05 10:09:33.804 | PROBE_SENT mode=raw ttl=5 idx=2 sport=33451
+2025-10-05 10:09:35.805 | HOP_SUMMARY ttl=5 replies=0 reached=0
+2025-10-05 10:09:35.805 | NO_ICMP_THIS_HOP ttl=5 (timeout)
+2025-10-05 10:09:35.805 | HOP 6: send 3 probes
+2025-10-05 10:09:35.805 | PROBE_SENT mode=raw ttl=6 idx=0 sport=33452
+2025-10-05 10:09:35.805 | PROBE_SENT mode=raw ttl=6 idx=1 sport=33453
+2025-10-05 10:09:35.805 | PROBE_SENT mode=raw ttl=6 idx=2 sport=33454
+2025-10-05 10:09:37.807 | HOP_SUMMARY ttl=6 replies=0 reached=0
+2025-10-05 10:09:37.807 | NO_ICMP_THIS_HOP ttl=6 (timeout)
+2025-10-05 10:09:37.807 | HOP 7: send 3 probes
+2025-10-05 10:09:37.808 | PROBE_SENT mode=raw ttl=7 idx=0 sport=33455
+2025-10-05 10:09:37.808 | PROBE_SENT mode=raw ttl=7 idx=1 sport=33456
+2025-10-05 10:09:37.808 | PROBE_SENT mode=raw ttl=7 idx=2 sport=33457
+2025-10-05 10:09:39.810 | HOP_SUMMARY ttl=7 replies=0 reached=0
+2025-10-05 10:09:39.810 | NO_ICMP_THIS_HOP ttl=7 (timeout)
+2025-10-05 10:09:39.810 | HOP 8: send 3 probes
+2025-10-05 10:09:39.810 | PROBE_SENT mode=raw ttl=8 idx=0 sport=33458
+2025-10-05 10:09:39.810 | PROBE_SENT mode=raw ttl=8 idx=1 sport=33459
+2025-10-05 10:09:39.810 | PROBE_SENT mode=raw ttl=8 idx=2 sport=33460
+2025-10-05 10:09:41.812 | HOP_SUMMARY ttl=8 replies=0 reached=0
+2025-10-05 10:09:41.813 | NO_ICMP_THIS_HOP ttl=8 (timeout)
+2025-10-05 10:09:41.813 | HOP 9: send 3 probes
+2025-10-05 10:09:41.813 | PROBE_SENT mode=raw ttl=9 idx=0 sport=33461
+2025-10-05 10:09:41.813 | PROBE_SENT mode=raw ttl=9 idx=1 sport=33462
+2025-10-05 10:09:41.813 | PROBE_SENT mode=raw ttl=9 idx=2 sport=33463
+2025-10-05 10:09:43.814 | HOP_SUMMARY ttl=9 replies=0 reached=0
+2025-10-05 10:09:43.814 | NO_ICMP_THIS_HOP ttl=9 (timeout)
+2025-10-05 10:09:43.815 | HOP 10: send 3 probes
+2025-10-05 10:09:43.815 | PROBE_SENT mode=raw ttl=10 idx=0 sport=33464
+2025-10-05 10:09:43.815 | PROBE_SENT mode=raw ttl=10 idx=1 sport=33465
+2025-10-05 10:09:43.815 | PROBE_SENT mode=raw ttl=10 idx=2 sport=33466
+2025-10-05 10:09:45.816 | HOP_SUMMARY ttl=10 replies=0 reached=0
+2025-10-05 10:09:45.817 | NO_ICMP_THIS_HOP ttl=10 (timeout)
+2025-10-05 10:09:45.817 | HOP 11: send 3 probes
+2025-10-05 10:09:45.817 | PROBE_SENT mode=raw ttl=11 idx=0 sport=33467
+2025-10-05 10:09:45.817 | PROBE_SENT mode=raw ttl=11 idx=1 sport=33468
+2025-10-05 10:09:45.817 | PROBE_SENT mode=raw ttl=11 idx=2 sport=33469
+2025-10-05 10:09:47.819 | HOP_SUMMARY ttl=11 replies=0 reached=0
+2025-10-05 10:09:47.820 | NO_ICMP_THIS_HOP ttl=11 (timeout)
+2025-10-05 10:09:47.820 | HOP 12: send 3 probes
+2025-10-05 10:09:47.820 | PROBE_SENT mode=raw ttl=12 idx=0 sport=33470
+2025-10-05 10:09:47.820 | PROBE_SENT mode=raw ttl=12 idx=1 sport=33471
+2025-10-05 10:09:47.820 | PROBE_SENT mode=raw ttl=12 idx=2 sport=33472
+2025-10-05 10:09:49.822 | HOP_SUMMARY ttl=12 replies=0 reached=0
+2025-10-05 10:09:49.822 | NO_ICMP_THIS_HOP ttl=12 (timeout)
+2025-10-05 10:09:49.822 | HOP 13: send 3 probes
+2025-10-05 10:09:49.822 | PROBE_SENT mode=raw ttl=13 idx=0 sport=33473
+2025-10-05 10:09:49.822 | PROBE_SENT mode=raw ttl=13 idx=1 sport=33474
+2025-10-05 10:09:49.822 | PROBE_SENT mode=raw ttl=13 idx=2 sport=33475
+2025-10-05 10:09:51.822 | HOP_SUMMARY ttl=13 replies=0 reached=0
+2025-10-05 10:09:51.822 | NO_ICMP_THIS_HOP ttl=13 (timeout)
+2025-10-05 10:09:51.822 | HOP 14: send 3 probes
+2025-10-05 10:09:51.823 | PROBE_SENT mode=raw ttl=14 idx=0 sport=33476
+2025-10-05 10:09:51.823 | PROBE_SENT mode=raw ttl=14 idx=1 sport=33477
+2025-10-05 10:09:51.823 | PROBE_SENT mode=raw ttl=14 idx=2 sport=33478
+2025-10-05 10:09:53.824 | HOP_SUMMARY ttl=14 replies=0 reached=0
+2025-10-05 10:09:53.824 | NO_ICMP_THIS_HOP ttl=14 (timeout)
+2025-10-05 10:09:53.824 | HOP 15: send 3 probes
+2025-10-05 10:09:53.824 | PROBE_SENT mode=raw ttl=15 idx=0 sport=33479
+2025-10-05 10:09:53.824 | PROBE_SENT mode=raw ttl=15 idx=1 sport=33480
+2025-10-05 10:09:53.824 | PROBE_SENT mode=raw ttl=15 idx=2 sport=33481
+2025-10-05 10:09:55.826 | HOP_SUMMARY ttl=15 replies=0 reached=0
+2025-10-05 10:09:55.827 | NO_ICMP_THIS_HOP ttl=15 (timeout)
+2025-10-05 10:09:55.827 | HOP 16: send 3 probes
+2025-10-05 10:09:55.827 | PROBE_SENT mode=raw ttl=16 idx=0 sport=33482
+2025-10-05 10:09:55.827 | PROBE_SENT mode=raw ttl=16 idx=1 sport=33483
+2025-10-05 10:09:55.827 | PROBE_SENT mode=raw ttl=16 idx=2 sport=33484
+2025-10-05 10:09:57.828 | HOP_SUMMARY ttl=16 replies=0 reached=0
+2025-10-05 10:09:57.828 | NO_ICMP_THIS_HOP ttl=16 (timeout)
+2025-10-05 10:09:57.828 | HOP 17: send 3 probes
+2025-10-05 10:09:57.828 | PROBE_SENT mode=raw ttl=17 idx=0 sport=33485
+2025-10-05 10:09:57.828 | PROBE_SENT mode=raw ttl=17 idx=1 sport=33486
+2025-10-05 10:09:57.829 | PROBE_SENT mode=raw ttl=17 idx=2 sport=33487
+2025-10-05 10:09:59.830 | HOP_SUMMARY ttl=17 replies=0 reached=0
+2025-10-05 10:09:59.830 | NO_ICMP_THIS_HOP ttl=17 (timeout)
+2025-10-05 10:09:59.830 | HOP 18: send 3 probes
+2025-10-05 10:09:59.831 | PROBE_SENT mode=raw ttl=18 idx=0 sport=33488
+2025-10-05 10:09:59.831 | PROBE_SENT mode=raw ttl=18 idx=1 sport=33489
+2025-10-05 10:09:59.831 | PROBE_SENT mode=raw ttl=18 idx=2 sport=33490
+2025-10-05 10:10:01.832 | HOP_SUMMARY ttl=18 replies=0 reached=0
+2025-10-05 10:10:01.832 | NO_ICMP_THIS_HOP ttl=18 (timeout)
+2025-10-05 10:10:01.832 | HOP 19: send 3 probes
+2025-10-05 10:10:01.832 | PROBE_SENT mode=raw ttl=19 idx=0 sport=33491
+2025-10-05 10:10:01.832 | PROBE_SENT mode=raw ttl=19 idx=1 sport=33492
+2025-10-05 10:10:01.832 | PROBE_SENT mode=raw ttl=19 idx=2 sport=33493
+2025-10-05 10:10:03.833 | HOP_SUMMARY ttl=19 replies=0 reached=0
+2025-10-05 10:10:03.833 | NO_ICMP_THIS_HOP ttl=19 (timeout)
+2025-10-05 10:10:03.833 | HOP 20: send 3 probes
+2025-10-05 10:10:03.833 | PROBE_SENT mode=raw ttl=20 idx=0 sport=33494
+2025-10-05 10:10:03.833 | PROBE_SENT mode=raw ttl=20 idx=1 sport=33495
+2025-10-05 10:10:03.833 | PROBE_SENT mode=raw ttl=20 idx=2 sport=33496
+2025-10-05 10:10:05.835 | HOP_SUMMARY ttl=20 replies=0 reached=0
+2025-10-05 10:10:05.835 | NO_ICMP_THIS_HOP ttl=20 (timeout)
+2025-10-05 10:10:05.835 | HOP 21: send 3 probes
+2025-10-05 10:10:05.835 | PROBE_SENT mode=raw ttl=21 idx=0 sport=33497
+2025-10-05 10:10:05.835 | PROBE_SENT mode=raw ttl=21 idx=1 sport=33498
+2025-10-05 10:10:05.835 | PROBE_SENT mode=raw ttl=21 idx=2 sport=33499
+2025-10-05 10:10:07.836 | HOP_SUMMARY ttl=21 replies=0 reached=0
+2025-10-05 10:10:07.837 | NO_ICMP_THIS_HOP ttl=21 (timeout)
+2025-10-05 10:10:07.837 | HOP 22: send 3 probes
+2025-10-05 10:10:07.837 | PROBE_SENT mode=raw ttl=22 idx=0 sport=33500
+2025-10-05 10:10:07.837 | PROBE_SENT mode=raw ttl=22 idx=1 sport=33501
+2025-10-05 10:10:07.837 | PROBE_SENT mode=raw ttl=22 idx=2 sport=33502
+2025-10-05 10:10:09.838 | HOP_SUMMARY ttl=22 replies=0 reached=0
+2025-10-05 10:10:09.838 | NO_ICMP_THIS_HOP ttl=22 (timeout)
+2025-10-05 10:10:09.838 | HOP 23: send 3 probes
+2025-10-05 10:10:09.838 | PROBE_SENT mode=raw ttl=23 idx=0 sport=33503
+2025-10-05 10:10:09.838 | PROBE_SENT mode=raw ttl=23 idx=1 sport=33504
+2025-10-05 10:10:09.838 | PROBE_SENT mode=raw ttl=23 idx=2 sport=33505
+2025-10-05 10:10:11.839 | HOP_SUMMARY ttl=23 replies=0 reached=0
+2025-10-05 10:10:11.839 | NO_ICMP_THIS_HOP ttl=23 (timeout)
+2025-10-05 10:10:11.839 | HOP 24: send 3 probes
+2025-10-05 10:10:11.839 | PROBE_SENT mode=raw ttl=24 idx=0 sport=33506
+2025-10-05 10:10:11.839 | PROBE_SENT mode=raw ttl=24 idx=1 sport=33507
+2025-10-05 10:10:11.839 | PROBE_SENT mode=raw ttl=24 idx=2 sport=33508
+2025-10-05 10:10:13.841 | HOP_SUMMARY ttl=24 replies=0 reached=0
+2025-10-05 10:10:13.841 | NO_ICMP_THIS_HOP ttl=24 (timeout)
+2025-10-05 10:10:13.841 | HOP 25: send 3 probes
+2025-10-05 10:10:13.842 | PROBE_SENT mode=raw ttl=25 idx=0 sport=33509
+2025-10-05 10:10:13.842 | PROBE_SENT mode=raw ttl=25 idx=1 sport=33510
+2025-10-05 10:10:13.842 | PROBE_SENT mode=raw ttl=25 idx=2 sport=33511
+2025-10-05 10:10:15.844 | HOP_SUMMARY ttl=25 replies=0 reached=0
+2025-10-05 10:10:15.844 | NO_ICMP_THIS_HOP ttl=25 (timeout)
+2025-10-05 10:10:15.844 | HOP 26: send 3 probes
+2025-10-05 10:10:15.844 | PROBE_SENT mode=raw ttl=26 idx=0 sport=33512
+2025-10-05 10:10:15.845 | PROBE_SENT mode=raw ttl=26 idx=1 sport=33513
+2025-10-05 10:10:15.845 | PROBE_SENT mode=raw ttl=26 idx=2 sport=33514
+2025-10-05 10:10:17.846 | HOP_SUMMARY ttl=26 replies=0 reached=0
+2025-10-05 10:10:17.846 | NO_ICMP_THIS_HOP ttl=26 (timeout)
+2025-10-05 10:10:17.846 | HOP 27: send 3 probes
+2025-10-05 10:10:17.846 | PROBE_SENT mode=raw ttl=27 idx=0 sport=33515
+2025-10-05 10:10:17.846 | PROBE_SENT mode=raw ttl=27 idx=1 sport=33516
+2025-10-05 10:10:17.846 | PROBE_SENT mode=raw ttl=27 idx=2 sport=33517
+2025-10-05 10:10:19.848 | HOP_SUMMARY ttl=27 replies=0 reached=0
+2025-10-05 10:10:19.848 | NO_ICMP_THIS_HOP ttl=27 (timeout)
+2025-10-05 10:10:19.848 | HOP 28: send 3 probes
+2025-10-05 10:10:19.848 | PROBE_SENT mode=raw ttl=28 idx=0 sport=33518
+2025-10-05 10:10:19.849 | PROBE_SENT mode=raw ttl=28 idx=1 sport=33519
+2025-10-05 10:10:19.849 | PROBE_SENT mode=raw ttl=28 idx=2 sport=33520
+2025-10-05 10:10:21.850 | HOP_SUMMARY ttl=28 replies=0 reached=0
+2025-10-05 10:10:21.850 | NO_ICMP_THIS_HOP ttl=28 (timeout)
+2025-10-05 10:10:21.850 | HOP 29: send 3 probes
+2025-10-05 10:10:21.850 | PROBE_SENT mode=raw ttl=29 idx=0 sport=33521
+2025-10-05 10:10:21.850 | PROBE_SENT mode=raw ttl=29 idx=1 sport=33522
+2025-10-05 10:10:21.850 | PROBE_SENT mode=raw ttl=29 idx=2 sport=33523
+2025-10-05 10:10:23.852 | HOP_SUMMARY ttl=29 replies=0 reached=0
+2025-10-05 10:10:23.852 | NO_ICMP_THIS_HOP ttl=29 (timeout)
+2025-10-05 10:10:23.852 | HOP 30: send 3 probes
+2025-10-05 10:10:23.853 | PROBE_SENT mode=raw ttl=30 idx=0 sport=33524
+2025-10-05 10:10:23.853 | PROBE_SENT mode=raw ttl=30 idx=1 sport=33525
+2025-10-05 10:10:23.853 | PROBE_SENT mode=raw ttl=30 idx=2 sport=33526
+2025-10-05 10:10:25.854 | HOP_SUMMARY ttl=30 replies=0 reached=0
+2025-10-05 10:10:25.854 | NO_ICMP_THIS_HOP ttl=30 (timeout)
+2025-10-05 10:10:25.854 | DIAG: Only local gateway and destination responded; intermediate ICMP Time Exceeded likely blocked or not translated by NAT/bridge.
+=== geo_tracer diag end 2025-10-05 10:10:26.052 ===
+=== geo_tracer diag start 2025-10-05 10:10:37.968 ===
+2025-10-05 10:10:37.968 | SETUP src=192.168.48.130 dst=172.253.118.101:443 mode=raw
+2025-10-05 10:10:37.968 | HOP 1: send 3 probes
+2025-10-05 10:10:37.968 | PROBE_SENT mode=raw ttl=1 idx=0 sport=33437
+2025-10-05 10:10:37.968 | PROBE_SENT mode=raw ttl=1 idx=1 sport=33438
+2025-10-05 10:10:37.968 | PROBE_SENT mode=raw ttl=1 idx=2 sport=33439
+2025-10-05 10:10:37.969 | ICMP_TIME_EXCEEDED from=192.168.48.2 sport=33437 inner_ttl=1 rtt_ms=0.399987
+2025-10-05 10:10:37.969 | ICMP_TIME_EXCEEDED from=192.168.48.2 sport=33438 inner_ttl=1 rtt_ms=0.370655
+2025-10-05 10:10:37.969 | ICMP_TIME_EXCEEDED from=192.168.48.2 sport=33439 inner_ttl=1 rtt_ms=0.359989
+2025-10-05 10:10:37.969 | HOP_SUMMARY ttl=1 replies=3 reached=0
+2025-10-05 10:10:37.969 | HOP 2: send 3 probes
+2025-10-05 10:10:37.969 | PROBE_SENT mode=raw ttl=2 idx=0 sport=33440
+2025-10-05 10:10:37.969 | PROBE_SENT mode=raw ttl=2 idx=1 sport=33441
+2025-10-05 10:10:37.969 | PROBE_SENT mode=raw ttl=2 idx=2 sport=33442
+2025-10-05 10:10:39.970 | HOP_SUMMARY ttl=2 replies=0 reached=0
+2025-10-05 10:10:39.970 | NO_ICMP_THIS_HOP ttl=2 (timeout)
+2025-10-05 10:10:39.970 | HOP 3: send 3 probes
+2025-10-05 10:10:39.971 | PROBE_SENT mode=raw ttl=3 idx=0 sport=33443
+2025-10-05 10:10:39.971 | PROBE_SENT mode=raw ttl=3 idx=1 sport=33444
+2025-10-05 10:10:39.971 | PROBE_SENT mode=raw ttl=3 idx=2 sport=33445
+2025-10-05 10:10:41.972 | HOP_SUMMARY ttl=3 replies=0 reached=0
+2025-10-05 10:10:41.973 | NO_ICMP_THIS_HOP ttl=3 (timeout)
+2025-10-05 10:10:41.973 | HOP 4: send 3 probes
+2025-10-05 10:10:41.973 | PROBE_SENT mode=raw ttl=4 idx=0 sport=33446
+2025-10-05 10:10:41.973 | PROBE_SENT mode=raw ttl=4 idx=1 sport=33447
+2025-10-05 10:10:41.973 | PROBE_SENT mode=raw ttl=4 idx=2 sport=33448
+2025-10-05 10:10:43.974 | HOP_SUMMARY ttl=4 replies=0 reached=0
+2025-10-05 10:10:43.974 | NO_ICMP_THIS_HOP ttl=4 (timeout)
+2025-10-05 10:10:43.974 | HOP 5: send 3 probes
+2025-10-05 10:10:43.974 | PROBE_SENT mode=raw ttl=5 idx=0 sport=33449
+2025-10-05 10:10:43.974 | PROBE_SENT mode=raw ttl=5 idx=1 sport=33450
+2025-10-05 10:10:43.974 | PROBE_SENT mode=raw ttl=5 idx=2 sport=33451
+2025-10-05 10:10:45.976 | HOP_SUMMARY ttl=5 replies=0 reached=0
+2025-10-05 10:10:45.976 | NO_ICMP_THIS_HOP ttl=5 (timeout)
+2025-10-05 10:10:45.976 | HOP 6: send 3 probes
+2025-10-05 10:10:45.976 | PROBE_SENT mode=raw ttl=6 idx=0 sport=33452
+2025-10-05 10:10:45.976 | PROBE_SENT mode=raw ttl=6 idx=1 sport=33453
+2025-10-05 10:10:45.976 | PROBE_SENT mode=raw ttl=6 idx=2 sport=33454
+2025-10-05 10:10:47.977 | HOP_SUMMARY ttl=6 replies=0 reached=0
+2025-10-05 10:10:47.978 | NO_ICMP_THIS_HOP ttl=6 (timeout)
+2025-10-05 10:10:47.978 | HOP 7: send 3 probes
+2025-10-05 10:10:47.978 | PROBE_SENT mode=raw ttl=7 idx=0 sport=33455
+2025-10-05 10:10:47.978 | PROBE_SENT mode=raw ttl=7 idx=1 sport=33456
+2025-10-05 10:10:47.978 | PROBE_SENT mode=raw ttl=7 idx=2 sport=33457
+2025-10-05 10:10:49.980 | HOP_SUMMARY ttl=7 replies=0 reached=0
+2025-10-05 10:10:49.980 | NO_ICMP_THIS_HOP ttl=7 (timeout)
+2025-10-05 10:10:49.980 | HOP 8: send 3 probes
+2025-10-05 10:10:49.981 | PROBE_SENT mode=raw ttl=8 idx=0 sport=33458
+2025-10-05 10:10:49.981 | PROBE_SENT mode=raw ttl=8 idx=1 sport=33459
+2025-10-05 10:10:49.981 | PROBE_SENT mode=raw ttl=8 idx=2 sport=33460
+2025-10-05 10:10:51.981 | HOP_SUMMARY ttl=8 replies=0 reached=0
+2025-10-05 10:10:51.981 | NO_ICMP_THIS_HOP ttl=8 (timeout)
+2025-10-05 10:10:51.982 | HOP 9: send 3 probes
+2025-10-05 10:10:51.982 | PROBE_SENT mode=raw ttl=9 idx=0 sport=33461
+2025-10-05 10:10:51.983 | PROBE_SENT mode=raw ttl=9 idx=1 sport=33462
+2025-10-05 10:10:51.983 | PROBE_SENT mode=raw ttl=9 idx=2 sport=33463
+2025-10-05 10:10:53.985 | HOP_SUMMARY ttl=9 replies=0 reached=0
+2025-10-05 10:10:53.985 | NO_ICMP_THIS_HOP ttl=9 (timeout)
+2025-10-05 10:10:53.985 | HOP 10: send 3 probes
+2025-10-05 10:10:53.985 | PROBE_SENT mode=raw ttl=10 idx=0 sport=33464
+2025-10-05 10:10:53.985 | PROBE_SENT mode=raw ttl=10 idx=1 sport=33465
+2025-10-05 10:10:53.985 | PROBE_SENT mode=raw ttl=10 idx=2 sport=33466
+2025-10-05 10:10:55.985 | HOP_SUMMARY ttl=10 replies=0 reached=0
+2025-10-05 10:10:55.986 | NO_ICMP_THIS_HOP ttl=10 (timeout)
+2025-10-05 10:10:55.986 | HOP 11: send 3 probes
+2025-10-05 10:10:55.986 | PROBE_SENT mode=raw ttl=11 idx=0 sport=33467
+2025-10-05 10:10:55.986 | PROBE_SENT mode=raw ttl=11 idx=1 sport=33468
+2025-10-05 10:10:55.986 | PROBE_SENT mode=raw ttl=11 idx=2 sport=33469
+2025-10-05 10:10:57.986 | HOP_SUMMARY ttl=11 replies=0 reached=0
+2025-10-05 10:10:57.986 | NO_ICMP_THIS_HOP ttl=11 (timeout)
+2025-10-05 10:10:57.986 | HOP 12: send 3 probes
+2025-10-05 10:10:57.987 | PROBE_SENT mode=raw ttl=12 idx=0 sport=33470
+2025-10-05 10:10:57.987 | PROBE_SENT mode=raw ttl=12 idx=1 sport=33471
+2025-10-05 10:10:57.987 | PROBE_SENT mode=raw ttl=12 idx=2 sport=33472
+2025-10-05 10:10:59.988 | HOP_SUMMARY ttl=12 replies=0 reached=0
+2025-10-05 10:10:59.988 | NO_ICMP_THIS_HOP ttl=12 (timeout)
+2025-10-05 10:10:59.988 | HOP 13: send 3 probes
+2025-10-05 10:10:59.988 | PROBE_SENT mode=raw ttl=13 idx=0 sport=33473
+2025-10-05 10:10:59.988 | PROBE_SENT mode=raw ttl=13 idx=1 sport=33474
+2025-10-05 10:10:59.988 | PROBE_SENT mode=raw ttl=13 idx=2 sport=33475
+2025-10-05 10:11:01.989 | HOP_SUMMARY ttl=13 replies=0 reached=0
+2025-10-05 10:11:01.989 | NO_ICMP_THIS_HOP ttl=13 (timeout)
+2025-10-05 10:11:01.989 | HOP 14: send 3 probes
+2025-10-05 10:11:01.989 | PROBE_SENT mode=raw ttl=14 idx=0 sport=33476
+2025-10-05 10:11:01.989 | PROBE_SENT mode=raw ttl=14 idx=1 sport=33477
+2025-10-05 10:11:01.989 | PROBE_SENT mode=raw ttl=14 idx=2 sport=33478
+2025-10-05 10:11:03.989 | HOP_SUMMARY ttl=14 replies=0 reached=0
+2025-10-05 10:11:03.989 | NO_ICMP_THIS_HOP ttl=14 (timeout)
+2025-10-05 10:11:03.989 | HOP 15: send 3 probes
+2025-10-05 10:11:03.990 | PROBE_SENT mode=raw ttl=15 idx=0 sport=33479
+2025-10-05 10:11:03.990 | PROBE_SENT mode=raw ttl=15 idx=1 sport=33480
+2025-10-05 10:11:03.990 | PROBE_SENT mode=raw ttl=15 idx=2 sport=33481
+2025-10-05 10:11:05.991 | HOP_SUMMARY ttl=15 replies=0 reached=0
+2025-10-05 10:11:05.991 | NO_ICMP_THIS_HOP ttl=15 (timeout)
+2025-10-05 10:11:05.991 | HOP 16: send 3 probes
+2025-10-05 10:11:05.991 | PROBE_SENT mode=raw ttl=16 idx=0 sport=33482
+2025-10-05 10:11:05.991 | PROBE_SENT mode=raw ttl=16 idx=1 sport=33483
+2025-10-05 10:11:05.991 | PROBE_SENT mode=raw ttl=16 idx=2 sport=33484
+2025-10-05 10:11:07.992 | HOP_SUMMARY ttl=16 replies=0 reached=0
+2025-10-05 10:11:07.992 | NO_ICMP_THIS_HOP ttl=16 (timeout)
+2025-10-05 10:11:07.992 | HOP 17: send 3 probes
+2025-10-05 10:11:07.992 | PROBE_SENT mode=raw ttl=17 idx=0 sport=33485
+2025-10-05 10:11:07.992 | PROBE_SENT mode=raw ttl=17 idx=1 sport=33486
+2025-10-05 10:11:07.992 | PROBE_SENT mode=raw ttl=17 idx=2 sport=33487
+2025-10-05 10:11:09.993 | HOP_SUMMARY ttl=17 replies=0 reached=0
+2025-10-05 10:11:09.993 | NO_ICMP_THIS_HOP ttl=17 (timeout)
+2025-10-05 10:11:09.993 | HOP 18: send 3 probes
+2025-10-05 10:11:09.993 | PROBE_SENT mode=raw ttl=18 idx=0 sport=33488
+2025-10-05 10:11:09.993 | PROBE_SENT mode=raw ttl=18 idx=1 sport=33489
+2025-10-05 10:11:09.993 | PROBE_SENT mode=raw ttl=18 idx=2 sport=33490
+2025-10-05 10:11:11.994 | HOP_SUMMARY ttl=18 replies=0 reached=0
+2025-10-05 10:11:11.994 | NO_ICMP_THIS_HOP ttl=18 (timeout)
+2025-10-05 10:11:11.994 | HOP 19: send 3 probes
+2025-10-05 10:11:11.994 | PROBE_SENT mode=raw ttl=19 idx=0 sport=33491
+2025-10-05 10:11:11.994 | PROBE_SENT mode=raw ttl=19 idx=1 sport=33492
+2025-10-05 10:11:11.994 | PROBE_SENT mode=raw ttl=19 idx=2 sport=33493
+2025-10-05 10:11:13.996 | HOP_SUMMARY ttl=19 replies=0 reached=0
+2025-10-05 10:11:13.996 | NO_ICMP_THIS_HOP ttl=19 (timeout)
+2025-10-05 10:11:13.996 | HOP 20: send 3 probes
+2025-10-05 10:11:13.996 | PROBE_SENT mode=raw ttl=20 idx=0 sport=33494
+2025-10-05 10:11:13.996 | PROBE_SENT mode=raw ttl=20 idx=1 sport=33495
+2025-10-05 10:11:13.996 | PROBE_SENT mode=raw ttl=20 idx=2 sport=33496
+2025-10-05 10:11:15.996 | HOP_SUMMARY ttl=20 replies=0 reached=0
+2025-10-05 10:11:15.996 | NO_ICMP_THIS_HOP ttl=20 (timeout)
+2025-10-05 10:11:15.996 | HOP 21: send 3 probes
+2025-10-05 10:11:15.997 | PROBE_SENT mode=raw ttl=21 idx=0 sport=33497
+2025-10-05 10:11:15.997 | PROBE_SENT mode=raw ttl=21 idx=1 sport=33498
+2025-10-05 10:11:15.997 | PROBE_SENT mode=raw ttl=21 idx=2 sport=33499
+2025-10-05 10:11:17.998 | HOP_SUMMARY ttl=21 replies=0 reached=0
+2025-10-05 10:11:17.998 | NO_ICMP_THIS_HOP ttl=21 (timeout)
+2025-10-05 10:11:17.998 | HOP 22: send 3 probes
+2025-10-05 10:11:17.998 | PROBE_SENT mode=raw ttl=22 idx=0 sport=33500
+2025-10-05 10:11:17.998 | PROBE_SENT mode=raw ttl=22 idx=1 sport=33501
+2025-10-05 10:11:17.998 | PROBE_SENT mode=raw ttl=22 idx=2 sport=33502
+2025-10-05 10:11:20.000 | HOP_SUMMARY ttl=22 replies=0 reached=0
+2025-10-05 10:11:20.000 | NO_ICMP_THIS_HOP ttl=22 (timeout)
+2025-10-05 10:11:20.000 | HOP 23: send 3 probes
+2025-10-05 10:11:20.001 | PROBE_SENT mode=raw ttl=23 idx=0 sport=33503
+2025-10-05 10:11:20.001 | PROBE_SENT mode=raw ttl=23 idx=1 sport=33504
+2025-10-05 10:11:20.001 | PROBE_SENT mode=raw ttl=23 idx=2 sport=33505
+2025-10-05 10:11:22.001 | HOP_SUMMARY ttl=23 replies=0 reached=0
+2025-10-05 10:11:22.001 | NO_ICMP_THIS_HOP ttl=23 (timeout)
+2025-10-05 10:11:22.001 | HOP 24: send 3 probes
+2025-10-05 10:11:22.001 | PROBE_SENT mode=raw ttl=24 idx=0 sport=33506
+2025-10-05 10:11:22.001 | PROBE_SENT mode=raw ttl=24 idx=1 sport=33507
+2025-10-05 10:11:22.001 | PROBE_SENT mode=raw ttl=24 idx=2 sport=33508
+2025-10-05 10:11:24.002 | HOP_SUMMARY ttl=24 replies=0 reached=0
+2025-10-05 10:11:24.002 | NO_ICMP_THIS_HOP ttl=24 (timeout)
+2025-10-05 10:11:24.002 | HOP 25: send 3 probes
+2025-10-05 10:11:24.002 | PROBE_SENT mode=raw ttl=25 idx=0 sport=33509
+2025-10-05 10:11:24.002 | PROBE_SENT mode=raw ttl=25 idx=1 sport=33510
+2025-10-05 10:11:24.002 | PROBE_SENT mode=raw ttl=25 idx=2 sport=33511
+2025-10-05 10:11:26.003 | HOP_SUMMARY ttl=25 replies=0 reached=0
+2025-10-05 10:11:26.003 | NO_ICMP_THIS_HOP ttl=25 (timeout)
+2025-10-05 10:11:26.003 | HOP 26: send 3 probes
+2025-10-05 10:11:26.003 | PROBE_SENT mode=raw ttl=26 idx=0 sport=33512
+2025-10-05 10:11:26.003 | PROBE_SENT mode=raw ttl=26 idx=1 sport=33513
+2025-10-05 10:11:26.003 | PROBE_SENT mode=raw ttl=26 idx=2 sport=33514
+2025-10-05 10:11:28.003 | HOP_SUMMARY ttl=26 replies=0 reached=0
+2025-10-05 10:11:28.003 | NO_ICMP_THIS_HOP ttl=26 (timeout)
+2025-10-05 10:11:28.003 | HOP 27: send 3 probes
+2025-10-05 10:11:28.003 | PROBE_SENT mode=raw ttl=27 idx=0 sport=33515
+2025-10-05 10:11:28.003 | PROBE_SENT mode=raw ttl=27 idx=1 sport=33516
+2025-10-05 10:11:28.003 | PROBE_SENT mode=raw ttl=27 idx=2 sport=33517
+2025-10-05 10:11:30.007 | HOP_SUMMARY ttl=27 replies=0 reached=0
+2025-10-05 10:11:30.007 | NO_ICMP_THIS_HOP ttl=27 (timeout)
+2025-10-05 10:11:30.007 | HOP 28: send 3 probes
+2025-10-05 10:11:30.007 | PROBE_SENT mode=raw ttl=28 idx=0 sport=33518
+2025-10-05 10:11:30.007 | PROBE_SENT mode=raw ttl=28 idx=1 sport=33519
+2025-10-05 10:11:30.008 | PROBE_SENT mode=raw ttl=28 idx=2 sport=33520
+2025-10-05 10:11:32.008 | HOP_SUMMARY ttl=28 replies=0 reached=0
+2025-10-05 10:11:32.008 | NO_ICMP_THIS_HOP ttl=28 (timeout)
+2025-10-05 10:11:32.008 | HOP 29: send 3 probes
+2025-10-05 10:11:32.008 | PROBE_SENT mode=raw ttl=29 idx=0 sport=33521
+2025-10-05 10:11:32.008 | PROBE_SENT mode=raw ttl=29 idx=1 sport=33522
+2025-10-05 10:11:32.008 | PROBE_SENT mode=raw ttl=29 idx=2 sport=33523
+2025-10-05 10:11:34.008 | HOP_SUMMARY ttl=29 replies=0 reached=0
+2025-10-05 10:11:34.008 | NO_ICMP_THIS_HOP ttl=29 (timeout)
+2025-10-05 10:11:34.008 | HOP 30: send 3 probes
+2025-10-05 10:11:34.008 | PROBE_SENT mode=raw ttl=30 idx=0 sport=33524
+2025-10-05 10:11:34.008 | PROBE_SENT mode=raw ttl=30 idx=1 sport=33525
+2025-10-05 10:11:34.008 | PROBE_SENT mode=raw ttl=30 idx=2 sport=33526
+2025-10-05 10:11:36.009 | HOP_SUMMARY ttl=30 replies=0 reached=0
+2025-10-05 10:11:36.009 | NO_ICMP_THIS_HOP ttl=30 (timeout)
+2025-10-05 10:11:36.009 | DIAG: Only local gateway and destination responded; intermediate ICMP Time Exceeded likely blocked or not translated by NAT/bridge.
+=== geo_tracer diag end 2025-10-05 10:11:36.237 ===
+=== geo_tracer diag start 2025-10-05 10:11:59.340 ===
+2025-10-05 10:11:59.340 | SETUP src=192.168.48.130 dst=172.253.118.102:443 mode=auto
+2025-10-05 10:11:59.340 | HOP 1: send 3 probes
+2025-10-05 10:11:59.340 | PROBE_SENT mode=connect ttl=1 idx=0 sport=33437
+2025-10-05 10:11:59.340 | PROBE_SENT mode=connect ttl=1 idx=1 sport=33438
+2025-10-05 10:11:59.340 | PROBE_SENT mode=connect ttl=1 idx=2 sport=33439
+2025-10-05 10:11:59.341 | ICMP_TIME_EXCEEDED from=192.168.48.2 sport=33437 inner_ttl=1 rtt_ms=0.337823
+2025-10-05 10:11:59.341 | ICMP_TIME_EXCEEDED from=192.168.48.2 sport=33438 inner_ttl=1 rtt_ms=0.309948
+2025-10-05 10:11:59.341 | ICMP_TIME_EXCEEDED from=192.168.48.2 sport=33439 inner_ttl=1 rtt_ms=0.291324
+2025-10-05 10:11:59.341 | HOP_SUMMARY ttl=1 replies=3 reached=0
+2025-10-05 10:11:59.341 | HOP 2: send 3 probes
+2025-10-05 10:11:59.341 | PROBE_SENT mode=connect ttl=2 idx=0 sport=33440
+2025-10-05 10:11:59.341 | PROBE_SENT mode=connect ttl=2 idx=1 sport=33441
+2025-10-05 10:11:59.341 | PROBE_SENT mode=connect ttl=2 idx=2 sport=33442
+2025-10-05 10:11:59.349 | DEST_REPLY type=SYN-ACK sport=33440 rtt_ms=8.016111
+2025-10-05 10:11:59.351 | DEST_REPLY type=SYN-ACK sport=33441 rtt_ms=10.489238
+2025-10-05 10:11:59.351 | DEST_REPLY type=SYN-ACK sport=33442 rtt_ms=10.506612
+2025-10-05 10:11:59.351 | HOP_SUMMARY ttl=2 replies=3 reached=1
+2025-10-05 10:11:59.351 | STOP: destination reached at ttl=2
+2025-10-05 10:11:59.351 | DIAG: Only local gateway and destination responded; intermediate ICMP Time Exceeded likely blocked or not translated by NAT/bridge.
+=== geo_tracer diag end 2025-10-05 10:11:59.864 ===
+=== geo_tracer diag start 2025-10-05 10:12:11.784 ===
+2025-10-05 10:12:11.793 | SETUP src=192.168.48.130 dst=223.130.192.247:443 mode=auto
+2025-10-05 10:12:11.793 | HOP 1: send 3 probes
+2025-10-05 10:12:11.793 | PROBE_SENT mode=connect ttl=1 idx=0 sport=33437
+2025-10-05 10:12:11.793 | PROBE_SENT mode=connect ttl=1 idx=1 sport=33438
+2025-10-05 10:12:11.793 | PROBE_SENT mode=connect ttl=1 idx=2 sport=33439
+2025-10-05 10:12:11.793 | ICMP_TIME_EXCEEDED from=192.168.48.2 sport=33437 inner_ttl=1 rtt_ms=0.237742
+2025-10-05 10:12:11.793 | ICMP_TIME_EXCEEDED from=192.168.48.2 sport=33438 inner_ttl=1 rtt_ms=0.413070
+2025-10-05 10:12:11.793 | ICMP_TIME_EXCEEDED from=192.168.48.2 sport=33439 inner_ttl=1 rtt_ms=0.403403
+2025-10-05 10:12:11.793 | HOP_SUMMARY ttl=1 replies=3 reached=0
+2025-10-05 10:12:11.793 | HOP 2: send 3 probes
+2025-10-05 10:12:11.793 | PROBE_SENT mode=connect ttl=2 idx=0 sport=33440
+2025-10-05 10:12:11.793 | PROBE_SENT mode=connect ttl=2 idx=1 sport=33441
+2025-10-05 10:12:11.793 | PROBE_SENT mode=connect ttl=2 idx=2 sport=33442
+2025-10-05 10:12:13.794 | HOP_SUMMARY ttl=2 replies=0 reached=0
+2025-10-05 10:12:13.794 | NO_ICMP_THIS_HOP ttl=2 (timeout)
+2025-10-05 10:12:13.794 | HOP 3: send 3 probes
+2025-10-05 10:12:13.795 | PROBE_SENT mode=connect ttl=3 idx=0 sport=33443
+2025-10-05 10:12:13.795 | PROBE_SENT mode=connect ttl=3 idx=1 sport=33444
+2025-10-05 10:12:13.795 | PROBE_SENT mode=connect ttl=3 idx=2 sport=33445
+2025-10-05 10:12:13.911 | DEST_REPLY type=SYN-ACK sport=33443 rtt_ms=116.184847
+2025-10-05 10:12:13.923 | DEST_REPLY type=SYN-ACK sport=33445 rtt_ms=128.164037
+2025-10-05 10:12:13.934 | DEST_REPLY type=SYN-ACK sport=33444 rtt_ms=139.053804
+2025-10-05 10:12:13.934 | HOP_SUMMARY ttl=3 replies=3 reached=1
+2025-10-05 10:12:13.934 | STOP: destination reached at ttl=3
+=== geo_tracer diag end 2025-10-05 10:12:14.351 ===
+=== geo_tracer diag start 2025-10-05 10:12:36.230 ===
+2025-10-05 10:12:36.242 | SETUP src=192.168.48.130 dst=144.120.198.5:443 mode=auto
+2025-10-05 10:12:36.242 | HOP 1: send 3 probes
+2025-10-05 10:12:36.242 | PROBE_SENT mode=connect ttl=1 idx=0 sport=33437
+2025-10-05 10:12:36.242 | PROBE_SENT mode=connect ttl=1 idx=1 sport=33438
+2025-10-05 10:12:36.242 | PROBE_SENT mode=connect ttl=1 idx=2 sport=33439
+2025-10-05 10:12:36.243 | ICMP_TIME_EXCEEDED from=192.168.48.2 sport=33437 inner_ttl=1 rtt_ms=0.355280
+2025-10-05 10:12:36.243 | ICMP_TIME_EXCEEDED from=192.168.48.2 sport=33438 inner_ttl=1 rtt_ms=0.317115
+2025-10-05 10:12:36.243 | ICMP_TIME_EXCEEDED from=192.168.48.2 sport=33439 inner_ttl=1 rtt_ms=0.300990
+2025-10-05 10:12:36.243 | HOP_SUMMARY ttl=1 replies=3 reached=0
+2025-10-05 10:12:36.243 | HOP 2: send 3 probes
+2025-10-05 10:12:36.243 | PROBE_SENT mode=connect ttl=2 idx=0 sport=33440
+2025-10-05 10:12:36.243 | PROBE_SENT mode=connect ttl=2 idx=1 sport=33441
+2025-10-05 10:12:36.243 | PROBE_SENT mode=connect ttl=2 idx=2 sport=33442
+2025-10-05 10:12:38.243 | HOP_SUMMARY ttl=2 replies=0 reached=0
+2025-10-05 10:12:38.243 | NO_ICMP_THIS_HOP ttl=2 (timeout)
+2025-10-05 10:12:38.243 | HOP 3: send 3 probes
+2025-10-05 10:12:38.243 | PROBE_SENT mode=connect ttl=3 idx=0 sport=33443
+2025-10-05 10:12:38.243 | PROBE_SENT mode=connect ttl=3 idx=1 sport=33444
+2025-10-05 10:12:38.244 | PROBE_SENT mode=connect ttl=3 idx=2 sport=33445
+2025-10-05 10:12:40.244 | HOP_SUMMARY ttl=3 replies=0 reached=0
+2025-10-05 10:12:40.244 | NO_ICMP_THIS_HOP ttl=3 (timeout)
+2025-10-05 10:12:40.244 | HOP 4: send 3 probes
+2025-10-05 10:12:40.245 | PROBE_SENT mode=connect ttl=4 idx=0 sport=33446
+2025-10-05 10:12:40.245 | PROBE_SENT mode=connect ttl=4 idx=1 sport=33447
+2025-10-05 10:12:40.246 | PROBE_SENT mode=connect ttl=4 idx=2 sport=33448
+2025-10-05 10:12:40.486 | DEST_REPLY type=SYN-ACK sport=33448 rtt_ms=241.134604
+2025-10-05 10:12:40.494 | DEST_REPLY type=SYN-ACK sport=33446 rtt_ms=249.339079
+2025-10-05 10:12:40.495 | DEST_REPLY type=SYN-ACK sport=33447 rtt_ms=250.344255
+2025-10-05 10:12:40.495 | HOP_SUMMARY ttl=4 replies=3 reached=1
+2025-10-05 10:12:40.495 | STOP: destination reached at ttl=4
+=== geo_tracer diag end 2025-10-05 10:12:40.953 ===
+=== geo_tracer diag start 2025-10-05 10:13:19.333 ===
+2025-10-05 10:13:19.335 | SETUP src=192.168.48.130 dst=104.16.133.229:443 mode=raw
+2025-10-05 10:13:19.335 | HOP 1: send 3 probes
+2025-10-05 10:13:19.335 | PROBE_SENT mode=raw ttl=1 idx=0 sport=33437
+2025-10-05 10:13:19.335 | PROBE_SENT mode=raw ttl=1 idx=1 sport=33438
+2025-10-05 10:13:19.335 | PROBE_SENT mode=raw ttl=1 idx=2 sport=33439
+2025-10-05 10:13:19.335 | ICMP_TIME_EXCEEDED from=192.168.48.2 sport=33437 inner_ttl=1 rtt_ms=0.221951
+2025-10-05 10:13:19.335 | ICMP_TIME_EXCEEDED from=192.168.48.2 sport=33438 inner_ttl=1 rtt_ms=0.226659
+2025-10-05 10:13:19.335 | ICMP_TIME_EXCEEDED from=192.168.48.2 sport=33439 inner_ttl=1 rtt_ms=0.222618
+2025-10-05 10:13:19.335 | HOP_SUMMARY ttl=1 replies=3 reached=0
+2025-10-05 10:13:19.335 | HOP 2: send 3 probes
+2025-10-05 10:13:19.335 | PROBE_SENT mode=raw ttl=2 idx=0 sport=33440
+2025-10-05 10:13:19.335 | PROBE_SENT mode=raw ttl=2 idx=1 sport=33441
+2025-10-05 10:13:19.335 | PROBE_SENT mode=raw ttl=2 idx=2 sport=33442
+2025-10-05 10:13:20.335 | HOP_SUMMARY ttl=2 replies=0 reached=0
+2025-10-05 10:13:20.335 | NO_ICMP_THIS_HOP ttl=2 (timeout)
+2025-10-05 10:13:20.335 | HOP 3: send 3 probes
+2025-10-05 10:13:20.335 | PROBE_SENT mode=raw ttl=3 idx=0 sport=33443
+2025-10-05 10:13:20.335 | PROBE_SENT mode=raw ttl=3 idx=1 sport=33444
+2025-10-05 10:13:20.335 | PROBE_SENT mode=raw ttl=3 idx=2 sport=33445
+2025-10-05 10:13:21.335 | HOP_SUMMARY ttl=3 replies=0 reached=0
+2025-10-05 10:13:21.335 | NO_ICMP_THIS_HOP ttl=3 (timeout)
+2025-10-05 10:13:21.335 | HOP 4: send 3 probes
+2025-10-05 10:13:21.335 | PROBE_SENT mode=raw ttl=4 idx=0 sport=33446
+2025-10-05 10:13:21.335 | PROBE_SENT mode=raw ttl=4 idx=1 sport=33447
+2025-10-05 10:13:21.335 | PROBE_SENT mode=raw ttl=4 idx=2 sport=33448
+2025-10-05 10:13:22.335 | HOP_SUMMARY ttl=4 replies=0 reached=0
+2025-10-05 10:13:22.335 | NO_ICMP_THIS_HOP ttl=4 (timeout)
+2025-10-05 10:13:22.335 | HOP 5: send 3 probes
+2025-10-05 10:13:22.335 | PROBE_SENT mode=raw ttl=5 idx=0 sport=33449
+2025-10-05 10:13:22.335 | PROBE_SENT mode=raw ttl=5 idx=1 sport=33450
+2025-10-05 10:13:22.335 | PROBE_SENT mode=raw ttl=5 idx=2 sport=33451
+2025-10-05 10:13:23.335 | HOP_SUMMARY ttl=5 replies=0 reached=0
+2025-10-05 10:13:23.336 | NO_ICMP_THIS_HOP ttl=5 (timeout)
+2025-10-05 10:13:23.336 | HOP 6: send 3 probes
+2025-10-05 10:13:23.336 | PROBE_SENT mode=raw ttl=6 idx=0 sport=33452
+2025-10-05 10:13:23.336 | PROBE_SENT mode=raw ttl=6 idx=1 sport=33453
+2025-10-05 10:13:23.336 | PROBE_SENT mode=raw ttl=6 idx=2 sport=33454
+2025-10-05 10:13:24.336 | HOP_SUMMARY ttl=6 replies=0 reached=0
+2025-10-05 10:13:24.336 | NO_ICMP_THIS_HOP ttl=6 (timeout)
+2025-10-05 10:13:24.336 | HOP 7: send 3 probes
+2025-10-05 10:13:24.336 | PROBE_SENT mode=raw ttl=7 idx=0 sport=33455
+2025-10-05 10:13:24.336 | PROBE_SENT mode=raw ttl=7 idx=1 sport=33456
+2025-10-05 10:13:24.336 | PROBE_SENT mode=raw ttl=7 idx=2 sport=33457
+2025-10-05 10:13:25.336 | HOP_SUMMARY ttl=7 replies=0 reached=0
+2025-10-05 10:13:25.336 | NO_ICMP_THIS_HOP ttl=7 (timeout)
+2025-10-05 10:13:25.336 | HOP 8: send 3 probes
+2025-10-05 10:13:25.337 | PROBE_SENT mode=raw ttl=8 idx=0 sport=33458
+2025-10-05 10:13:25.337 | PROBE_SENT mode=raw ttl=8 idx=1 sport=33459
+2025-10-05 10:13:25.337 | PROBE_SENT mode=raw ttl=8 idx=2 sport=33460
+2025-10-05 10:13:26.337 | HOP_SUMMARY ttl=8 replies=0 reached=0
+2025-10-05 10:13:26.337 | NO_ICMP_THIS_HOP ttl=8 (timeout)
+2025-10-05 10:13:26.337 | HOP 9: send 3 probes
+2025-10-05 10:13:26.338 | PROBE_SENT mode=raw ttl=9 idx=0 sport=33461
+2025-10-05 10:13:26.338 | PROBE_SENT mode=raw ttl=9 idx=1 sport=33462
+2025-10-05 10:13:26.338 | PROBE_SENT mode=raw ttl=9 idx=2 sport=33463
+2025-10-05 10:13:27.338 | HOP_SUMMARY ttl=9 replies=0 reached=0
+2025-10-05 10:13:27.339 | NO_ICMP_THIS_HOP ttl=9 (timeout)
+2025-10-05 10:13:27.339 | HOP 10: send 3 probes
+2025-10-05 10:13:27.339 | PROBE_SENT mode=raw ttl=10 idx=0 sport=33464
+2025-10-05 10:13:27.339 | PROBE_SENT mode=raw ttl=10 idx=1 sport=33465
+2025-10-05 10:13:27.339 | PROBE_SENT mode=raw ttl=10 idx=2 sport=33466
+2025-10-05 10:13:28.340 | HOP_SUMMARY ttl=10 replies=0 reached=0
+2025-10-05 10:13:28.340 | NO_ICMP_THIS_HOP ttl=10 (timeout)
+2025-10-05 10:13:28.340 | HOP 11: send 3 probes
+2025-10-05 10:13:28.340 | PROBE_SENT mode=raw ttl=11 idx=0 sport=33467
+2025-10-05 10:13:28.341 | PROBE_SENT mode=raw ttl=11 idx=1 sport=33468
+2025-10-05 10:13:28.341 | PROBE_SENT mode=raw ttl=11 idx=2 sport=33469
+2025-10-05 10:13:29.343 | HOP_SUMMARY ttl=11 replies=0 reached=0
+2025-10-05 10:13:29.343 | NO_ICMP_THIS_HOP ttl=11 (timeout)
+2025-10-05 10:13:29.343 | HOP 12: send 3 probes
+2025-10-05 10:13:29.343 | PROBE_SENT mode=raw ttl=12 idx=0 sport=33470
+2025-10-05 10:13:29.343 | PROBE_SENT mode=raw ttl=12 idx=1 sport=33471
+2025-10-05 10:13:29.343 | PROBE_SENT mode=raw ttl=12 idx=2 sport=33472
+2025-10-05 10:13:30.344 | HOP_SUMMARY ttl=12 replies=0 reached=0
+2025-10-05 10:13:30.344 | NO_ICMP_THIS_HOP ttl=12 (timeout)
+2025-10-05 10:13:30.344 | HOP 13: send 3 probes
+2025-10-05 10:13:30.345 | PROBE_SENT mode=raw ttl=13 idx=0 sport=33473
+2025-10-05 10:13:30.345 | PROBE_SENT mode=raw ttl=13 idx=1 sport=33474
+2025-10-05 10:13:30.345 | PROBE_SENT mode=raw ttl=13 idx=2 sport=33475
+2025-10-05 10:13:31.346 | HOP_SUMMARY ttl=13 replies=0 reached=0
+2025-10-05 10:13:31.346 | NO_ICMP_THIS_HOP ttl=13 (timeout)
+2025-10-05 10:13:31.346 | HOP 14: send 3 probes
+2025-10-05 10:13:31.346 | PROBE_SENT mode=raw ttl=14 idx=0 sport=33476
+2025-10-05 10:13:31.346 | PROBE_SENT mode=raw ttl=14 idx=1 sport=33477
+2025-10-05 10:13:31.346 | PROBE_SENT mode=raw ttl=14 idx=2 sport=33478
+2025-10-05 10:13:32.346 | HOP_SUMMARY ttl=14 replies=0 reached=0
+2025-10-05 10:13:32.347 | NO_ICMP_THIS_HOP ttl=14 (timeout)
+2025-10-05 10:13:32.347 | HOP 15: send 3 probes
+2025-10-05 10:13:32.347 | PROBE_SENT mode=raw ttl=15 idx=0 sport=33479
+2025-10-05 10:13:32.347 | PROBE_SENT mode=raw ttl=15 idx=1 sport=33480
+2025-10-05 10:13:32.347 | PROBE_SENT mode=raw ttl=15 idx=2 sport=33481
+2025-10-05 10:13:33.347 | HOP_SUMMARY ttl=15 replies=0 reached=0
+2025-10-05 10:13:33.348 | NO_ICMP_THIS_HOP ttl=15 (timeout)
+2025-10-05 10:13:33.348 | HOP 16: send 3 probes
+2025-10-05 10:13:33.348 | PROBE_SENT mode=raw ttl=16 idx=0 sport=33482
+2025-10-05 10:13:33.348 | PROBE_SENT mode=raw ttl=16 idx=1 sport=33483
+2025-10-05 10:13:33.348 | PROBE_SENT mode=raw ttl=16 idx=2 sport=33484
+2025-10-05 10:13:34.349 | HOP_SUMMARY ttl=16 replies=0 reached=0
+2025-10-05 10:13:34.349 | NO_ICMP_THIS_HOP ttl=16 (timeout)
+2025-10-05 10:13:34.349 | HOP 17: send 3 probes
+2025-10-05 10:13:34.349 | PROBE_SENT mode=raw ttl=17 idx=0 sport=33485
+2025-10-05 10:13:34.349 | PROBE_SENT mode=raw ttl=17 idx=1 sport=33486
+2025-10-05 10:13:34.349 | PROBE_SENT mode=raw ttl=17 idx=2 sport=33487
+2025-10-05 10:13:35.349 | HOP_SUMMARY ttl=17 replies=0 reached=0
+2025-10-05 10:13:35.349 | NO_ICMP_THIS_HOP ttl=17 (timeout)
+2025-10-05 10:13:35.350 | HOP 18: send 3 probes
+2025-10-05 10:13:35.350 | PROBE_SENT mode=raw ttl=18 idx=0 sport=33488
+2025-10-05 10:13:35.350 | PROBE_SENT mode=raw ttl=18 idx=1 sport=33489
+2025-10-05 10:13:35.350 | PROBE_SENT mode=raw ttl=18 idx=2 sport=33490
+=== geo_tracer diag start 2025-10-05 10:13:40.400 ===
+2025-10-05 10:13:40.400 | SETUP src=192.168.48.130 dst=104.16.132.229:443 mode=auto
+2025-10-05 10:13:40.400 | HOP 1: send 3 probes
+2025-10-05 10:13:40.400 | PROBE_SENT mode=connect ttl=1 idx=0 sport=33437
+2025-10-05 10:13:40.400 | PROBE_SENT mode=connect ttl=1 idx=1 sport=33438
+2025-10-05 10:13:40.400 | PROBE_SENT mode=connect ttl=1 idx=2 sport=33439
+2025-10-05 10:13:40.400 | ICMP_TIME_EXCEEDED from=192.168.48.2 sport=33437 inner_ttl=1 rtt_ms=0.199451
+2025-10-05 10:13:40.400 | ICMP_TIME_EXCEEDED from=192.168.48.2 sport=33438 inner_ttl=1 rtt_ms=0.180994
+2025-10-05 10:13:40.400 | ICMP_TIME_EXCEEDED from=192.168.48.2 sport=33439 inner_ttl=1 rtt_ms=0.215285
+2025-10-05 10:13:40.400 | HOP_SUMMARY ttl=1 replies=3 reached=0
+2025-10-05 10:13:40.400 | HOP 2: send 3 probes
+2025-10-05 10:13:40.400 | PROBE_SENT mode=connect ttl=2 idx=0 sport=33440
+2025-10-05 10:13:40.400 | PROBE_SENT mode=connect ttl=2 idx=1 sport=33441
+2025-10-05 10:13:40.400 | PROBE_SENT mode=connect ttl=2 idx=2 sport=33442
+2025-10-05 10:13:40.408 | DEST_REPLY type=SYN-ACK sport=33440 rtt_ms=7.493163
+2025-10-05 10:13:40.415 | DEST_REPLY type=SYN-ACK sport=33442 rtt_ms=14.049440
+2025-10-05 10:13:40.415 | DEST_REPLY type=SYN-ACK sport=33441 rtt_ms=14.107563
+2025-10-05 10:13:40.415 | HOP_SUMMARY ttl=2 replies=3 reached=1
+2025-10-05 10:13:40.415 | STOP: destination reached at ttl=2
+2025-10-05 10:13:40.415 | DIAG: Only local gateway and destination responded; intermediate ICMP Time Exceeded likely blocked or not translated by NAT/bridge.
+=== geo_tracer diag end 2025-10-05 10:13:40.918 ===
