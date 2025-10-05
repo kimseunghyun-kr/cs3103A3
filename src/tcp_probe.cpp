@@ -168,7 +168,7 @@ namespace geo
                     tcp->dest = htons(static_cast<uint16_t>(port));
                     tcp->seq = htonl((ttl << 24) | (i << 16) | 0x1234);
                     tcp->doff = 5;
-                    tcp->syn = 1;
+                    TCP_SET_SYN(tcp, 1);
                     tcp->window = htons(65535);
 
                     // compute checksums (required in RAW mode)
@@ -313,8 +313,8 @@ namespace geo
                             auto it = in_flight.find(dport);
                             if (it != in_flight.end() && !it->second.done && ip->saddr == dst_ip.s_addr)
                             {
-                                bool synack = (tcp->syn && tcp->ack);
-                                bool rst = (tcp->rst != 0);
+                                bool synack = (TCP_IS_SYN(tcp) && TCP_IS_ACK(tcp));
+                                bool rst    = TCP_IS_RST(tcp);
                                 if (synack || rst)
                                 {
                                     double rtt = std::chrono::duration<double, std::milli>(clk::now() - it->second.t0).count();
